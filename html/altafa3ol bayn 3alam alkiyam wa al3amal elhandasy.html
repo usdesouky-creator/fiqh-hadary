@@ -1,900 +1,168 @@
-﻿<!DOCTYPE html>
-<html dir="rtl" lang="ar">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<title>التفاعل بين عالم القيم وبين العمل الهندسي</title>
-	<meta name="generator" content="LibreOffice 26.2.2.2 (Windows)"/>
-	<meta name="author" content="ahmedg"/>
-	<meta name="created" content="2008-04-02T10:05:00"/>
-	<meta name="changedby" content="*"/>
-	<meta name="changed" content="2008-04-02T10:05:00"/>
-	<style type="text/css">
-		@page { size: Ù¨.Ù¢Ù§in Ù¡Ù¡.Ù¦Ù©in; margin-left: Ù¡.Ù¢Ù¥in; margin-right: Ù¡.Ù¢Ù¥in; }
-		p { color: #Ù Ù Ù Ù Ù Ù ; direction: rtl; text-align: right; }
-		p.western { "Times New Roman", serif; }
-		p.cjk { "Times New Roman", serif }
-		p.ctl { "Simplified Arabic"; so-language: ar-SA }
-	</style>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;600&display=swap" rel="stylesheet">
-<style>
-  *, *::before, *::after { box-sizing: border-box; }
-  html, body {
-    direction: rtl;
-    text-align: right;
-    'Amiri', 'Traditional Arabic', serif;
-    font-size: Ù¡Ù¨px;
-    color: #Ù¡aÙ¡aÙ¡a;
-    background: #fafafÙ¨;
-    margin: Ù ;
-    padding: Ù ;
-  }
-  .doc-body {
-    max-width: Ù¨Ù Ù px;
-    margin: Ù  auto;
-    padding: Ù¢rem Ù¡.Ù¥rem Ù¤rem;
-  }
-  hÙ¡, hÙ¢, hÙ£, hÙ¤, hÙ¥, hÙ¦ {
-    'Cairo', 'Traditional Arabic', sans-serif;
-    font-weight: Ù¦Ù Ù ;
-    color: #Ù¡aÙ£aÙ¢a;
-    text-align: right;
-    direction: rtl;
-    }
-  p {
-    margin: Ù .Ù¨em Ù ;
-    text-align: right;
-    direction: rtl;
-  }
-  ul, ol {
-    direction: rtl;
-    text-align: right;
-    padding-right: Ù¢em;
-    padding-left: Ù ;
-    margin: Ù .Ù¨em Ù ;
-  }
-  li {
-    direction: rtl;
-    text-align: right;
-    margin: Ù .Ù£em Ù ;
-  }
-  /* English text passages */
-  p:lang(en), span[lang="en"], .english {
-    direction: ltr;
-    text-align: left;
-  }
-  /* Word-generated class overrides */
-  [class*="western"], [class*="cjk"], [class*="ctl"] {
-    }
-  table {
-    border-collapse: collapse;
-    width: Ù¡Ù Ù %;
-    direction: rtl;
-    margin: Ù¡em Ù ;
-  }
-  td, th {
-    border: Ù¡px solid #ccc;
-    padding: Ù¦px Ù¡Ù px;
-    text-align: right;
-    direction: rtl;
-  }
-  img { max-width: Ù¡Ù Ù %; height: auto; }
-  /* strip Word's inline font-size on body/span */
-  body > * { font-size: inherit; }
-  hr { border: none; border-top: Ù¡px solid #ddd; margin: Ù¢em Ù ; }
-  a { color: #Ù¡aÙ¦eÙ£c; }
-</style>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;600&display=swap" rel="stylesheet">
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>التفاعل بين عالم القيم والعمل الهندسي — د. سيد دسوقي حسن</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Noto+Naskh+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-*,*::before,*::after{box-sizing:border-box}
-html,body{direction:rtl;text-align:right;font-family:'Amiri','Traditional Arabic',serif;font-size:Ù¡Ù©px;color:#Ù¡aÙ¡aÙ¡a;background:#fafafÙ¨;margin:Ù ;padding:Ù }
-.doc-body{max-width:Ù¨Ù¢Ù px;margin:Ù  auto;padding:Ù¢rem Ù¡.Ù¥rem Ù¤rem}
-hÙ¡,hÙ¢,hÙ£,hÙ¤,hÙ¥,hÙ¦{font-family:'Cairo','Traditional Arabic',sans-serif;font-weight:Ù¦Ù Ù ;color:#Ù¡aÙ£aÙ¢a;text-align:right;direction:rtl;}
-p{margin:.Ù¨em Ù ;text-align:right;direction:rtl}
-ul,ol{direction:rtl;text-align:right;padding-right:Ù¢em;padding-left:Ù ;margin:.Ù¨em Ù }
-li{direction:rtl;text-align:right;margin:.Ù£em Ù }
-table{border-collapse:collapse;width:Ù¡Ù Ù %;direction:rtl;margin:Ù¡em Ù }
-td,th{border:Ù¡px solid #ccc;padding:Ù¦px Ù¡Ù px;text-align:right;direction:rtl}
-img{max-width:Ù¡Ù Ù %;height:auto}
-hr{border:none;border-top:Ù¡px solid #ddd;margin:Ù¢em Ù }
-a{color:#Ù¡aÙ¦eÙ£c}
-</style></head>
-<body><div style="background:#1a6e3c;padding:12px 20px;display:flex;align-items:center;gap:12px;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.25);"><a href="https://fiqh-hadary.com" style="color:#fff;text-decoration:none;font-size:14px;"><<ENTITYÙ¨Ù¥Ù©Ù¤>> العودة إلى الموقع</a></div><div class="doc-body"><p class="western" align="center">
-<font color="#ff0000"><u><font><span lang="ar-EG">التفاعل
-بين عالم القيم وبين العمل الهندسي</span></font></u></font></p>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font><span lang="ar-EG">يظن
-بعض الناس أن العمل الهندسي عمل مجرد لا
-علاقة له بعالم القيم السائد في المجتمع،
-إن عالم القيم يدخل في إنشاء العمل الهندسي
-نفسه، وهو الذي يضبطه ويوجهه إلى مقاصد
-حياتية مرتبطة بعالم القيم، وفي هذه
-الصفحات أحاول أن أحلل هذه العلاقة
-التشابكية بين عالم القيم وبين عالم العمل
-الهندسي، والله الموفق</span></font></span></font><font>.</font></p>
-<p class="western" align="right">
-<font><span lang="ar-SA"><u><font><span lang="ar-EG">العمل
-الهندسي وعناصره</span></font></span></font><font>:</font></u></p>
-<ol>
-	<li><p class="western" align="right">
-	<font><font><span lang="ar-EG">دوافع
-	أخلاقية لإعمار الأرض</span></font></font><font>.</font></p></li>
-	<li><p class="western" align="right">
-	<font><font><span lang="ar-EG">فكرة
-	تقنية </span></font></font><font>(</font><font><font><span lang="ar-EG">اختراعات</span></font></font><font>/
-	</font><font><font><span lang="ar-EG">حيل</span></font></font><font>).</font></p></li>
-	<li><p class="western" align="right">
-	<font><font><span lang="ar-EG">نموذج
-	أولي</span></font></font><font>.</font></p></li>
-	<li><p class="western" align="right">
-	<font><font><span lang="ar-EG">اختبارات
-	معملية ومجالية</span></font></font><font>.</font></p></li>
-	<li><p class="western" align="right">
-	<font><font><span lang="ar-EG">دراسات
-	تحليلية ونمذجة رياضية وطبيعية</span></font></font><font>.</font></p></li>
-	<li><p class="western" align="right">
-	<font><span lang="ar-SA"><font><span lang="ar-EG">تصميمات
-	لنموذج متقدم</span></font></span></font><font>.</font></p></li>
-	<li><p class="western" align="right">
-	<font><font><span lang="ar-EG">اختبارات
-	نهائية معملية ومجالية</span></font></font><font>.</font></p></li>
-	<li><p class="western" align="right">
-	<font><font><span lang="ar-EG">دراسات
-	اقتصادية </span></font></font><font>(</font><font><font><span lang="ar-EG">الحاجة
-	الحياتية</span></font></font><font>/
-	</font><font><font><span lang="ar-EG">التكلفة</span></font></font><font>/
-	</font><font><font><span lang="ar-EG">التمويل</span></font></font><font>/
-	</font><font><font><span lang="ar-EG">الربح</span></font></font><font>)</font></p></li>
-	<li><p class="western" align="right">
-	<font><font><span lang="ar-EG">دراسات
-	بيئية وحضارية</span></font></font><font>.</font></p></li>
-	<li><p class="western" align="right">
-	<font><font><span lang="ar-EG">تصنيع
-	كمي للنموذج المتقدم</span></font></font><font>.</font></p></li>
-	<li><p class="western" align="right">
-	<font><font><span lang="ar-EG">اختبارات
-	نهائية</span></font></font><font>.</font></p></li>
-	<li><p class="western" align="right">
-	<font><font><span lang="ar-EG">تسويق</span></font></font><font>.</font></p></li>
-</ol>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font><span lang="ar-EG">يتفاعل
-عالم القيم مع العمل الهندسي في ثلاثة من
-هذه العناصر</span></font></span></font><font>:
-Ù¡</font><font><span lang="ar-SA"><font><span lang="ar-EG">،
-</span></font></span></font><font>Ù¨</font><font><span lang="ar-SA"><font><span lang="ar-EG">،
-</span></font></span></font><font>Ù©.</font></p>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font color="#ff0000"><font><span lang="ar-EG">أ</span></font></span></font><font>)
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">دوافع
-أخلاقية لإعمار الأرض</span></font></span></font><font>:</font></font></p>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font><span lang="ar-EG">يقول
-الله تعالى</span></font></span></font><font>:
-&quot;</font><font><span lang="ar-SA"><font><span lang="ar-EG">هُوَ
-الَّذِي جَعَلَ لَكُمُ الْأَرْضَ ذَلُولاً
-فَامْشُوا فِي مَنَاكِبِهَا وَكُلُوا
-مِن رِّزْقِهِ وَإِلَيْهِ النُّشُورُ</span></font></span></font><font>&quot;</font><font>
-[</font><font><span lang="ar-SA"><font><span lang="ar-EG">الملك
-</span></font></span></font><font>:
-Ù¡Ù¥]</font><font>.</font></p>
-<p class="western" align="right">
-<font><font><span lang="ar-EG">أي
-أن من مقاصد الدين أن يحاول الناس أن
-يذللوا الأرض حتى يستطيعوا المشي فيها
-لإنتاج متطلبات حياتهم</span></font></font><font>.</font></p>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font><span lang="ar-EG">والمشي
-في المناكب يعني السعي الدءوب لحل كل ما
-يعترض طريق الإنسان من صعوبات من أجل
-الحصول على كل متطلبات حياته، بل إن العمل
-على تذليل الأرض من أجل السعي فيها لتوفير
-الاحتياجات ليس للبشر فحسب، ولكن لكل
-الخلق من حولنا</span></font></span></font><font>.
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">والله
-يقول عن النحل</span></font></span></font><font>:
-&quot;</font><font><span lang="ar-SA"><font><span lang="ar-EG">وَأَوْحَى
-رَبُّكَ إِلَى النَّحْلِ أَنِ اتَّخِذِي
-مِنَ الْجِبَالِ بُيُوتاً وَمِنَ الشَّجَرِ
-وَمِمَّا يَعْرِشُونَ</span></font><font><span lang="ar-EG">
-</span></font></span></font><font>*
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">ثُمَّ
-كُلِي مِن كُلِّ الثَّمَرَاتِ فَاسْلُكِي
-سُبُلَ رَبِّكِ ذُلُلاً يَخْرُجُ مِن
-بُطُونِهَا شَرَابٌ مُّخْتَلِفٌ
-أَلْوَانُهُ فِيهِ شِفَاء لِلنَّاسِ
-إِنَّ فِي ذَلِكَ لآيَةً لِّقَوْمٍ
-يَتَفَكَّرُونَ </span></font></span></font><font>[</font><font><span lang="ar-SA"><font><span lang="ar-EG">النحل
-</span></font></span></font><font>:
-</font><font>Ù¦Ù¨ </font><font><span lang="ar-SA"><font><span lang="ar-EG">،
-</span></font></span></font><font>Ù¦Ù©]</font><font><span lang="ar-SA"><font><span lang="ar-EG">،
-أي أننا ينبغي أن نذلل الأرض لنا ولمن
-حولنا من الخلائق</span></font></span></font><font>.</font></p>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font><span lang="ar-EG">ويوحي
-لي لفظ </span></font></span></font><font>&quot;</font><font><span lang="ar-SA"><font><span lang="ar-EG">المناكب</span></font></span></font><font>&quot;
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">بالعسر
-الذي سيلقاه الإنسان في سعيه في الحياة،
-وكما يقول القرآن</span></font></span></font><font>:
-&quot;</font><font><span lang="ar-SA"><font><span lang="ar-EG">إِنَّ
-مَعَ الْعُسْرِ يُسْراً</span></font></span></font><font>&quot;</font><font>
-[</font><font><span lang="ar-SA"><font><span lang="ar-EG">الشرح
-</span></font></span></font><font>:
-Ù¦]</font><font><span lang="ar-SA"><font><span lang="ar-EG">،
-أي أن اليسر ينشأ مع العسر خطوة بخطوة</span></font></span></font><font>.
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">وهذه
-حقيقة تحكم سعي الإنسان في الحياة، كما
-تحكم كل الظواهر الطبيعية</span></font></span></font><font>.</font></p>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font><span lang="ar-EG">قرأت
-قصيدة وأنا طالب في كلية الهندسة في أواخر
-الخمسينيات، يقول الشاعر في بيت منها</span></font></span></font><font>:</font></p>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font><span lang="ar-EG">رددي
-في الأسر يسرى  إن بعد العسر يسرا</span></font></span></font></p>
-<p class="western" align="right">
-<font><font><span lang="ar-EG">وقلت
-في نفسي لماذا استخدم الشاعر </span></font></font><font>&quot;</font><font><font><span lang="ar-EG">بعد</span></font></font><font>&quot;
-</font><font><font><span lang="ar-EG">ولم
-يستخدم </span></font></font><font>&quot;</font><font><font><span lang="ar-EG">مع</span></font></font><font>&quot;
-</font><font><font><span lang="ar-EG">كما
-في القرآن</span></font></font><font>.</font></p>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font><span lang="ar-EG">وفي
-تلك الفترة كنا نأخذ محاضرات في الديناميكا
-الهوائية وكنا نراجع منشأ قوة </span></font></span></font><font>&quot;</font><font><span lang="ar-SA"><font><span lang="ar-EG">الرفع</span></font></span></font><font>&quot;
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">التي
-تحمل الطائرة إلى أعلى، وعلمنا حينئذ أن
-منشأ قوة الرفع هي قوة الإعاقة للطائرة،
-ولولا الإعاقة لما كان هناك رفع، فالرفع
-ينشأ من التفاف الهواء حول الجناح،
-والالتفاف ينشأ من لزوجة الهواء، ولزوجة
-الهواء هي أصل الإعاقة، وصدق الله العظيم</span></font></span></font><font>:
-&quot;</font><font><span lang="ar-SA"><font><span lang="ar-EG">إِنَّ
-مَعَ الْعُسْرِ يُسْراً</span></font></span></font><font>&quot;</font><font>
-[</font><font><span lang="ar-SA"><font><span lang="ar-EG">الشرح
-</span></font></span></font><font>:
-Ù¦]</font><font>.</font></p>
-<p class="western" align="right">
-<font><font><span lang="ar-EG">والمشي
-في مناكب الأرض وما يلقاه الإنسان فيه من
-العسر له ثلاثة عناصر حتى يتحقق معه اليسر</span></font></font><font>:</font></p>
-<ol>
-	<li><p class="western" align="right">
-	<font><span lang="ar-SA"><font><span lang="ar-EG">العطاء</span></font></span></font><font>:
-	</font><font><span lang="ar-SA"><font><span lang="ar-EG">كل
-	امرئ يعطي من سعته</span></font></span></font><font>.</font></p></li>
-	<li><p class="western" align="right">
-	<font><font><span lang="ar-EG">التقوى</span></font></font><font>:
-	</font><font><font><span lang="ar-EG">تحدد
-	أهداف العطاء وآدابه</span></font></font><font>.</font></p></li>
-	<li><p class="western" align="right">
-	<font><font><span lang="ar-EG">التصديق
-	بالحسنى</span></font></font><font>:
-	</font><font><font><span lang="ar-EG">الجدوى
-	الربانية من العطاء</span></font></font><font>.</font></p></li>
-</ol>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font><span lang="ar-EG">والله
-يقول</span></font></span></font><font>:
-&quot;</font><font><span lang="ar-SA"><font><span lang="ar-EG">فَأَمَّا
-مَن أَعْطَى وَاتَّقَى</span></font><font><span lang="ar-EG">
-</span></font></span></font><font>*
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">وَصَدَّقَ
-بِالْحُسْنَى</span></font><font><span lang="ar-EG">
-</span></font></span></font><font>*
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">فَسَنُيَسِّرُهُ
-لِلْيُسْرَى</span></font></span></font><font>&quot;</font><font>
-[</font><font><span lang="ar-SA"><font><span lang="ar-EG">الليل
-</span></font></span></font><font>:
-</font><font>Ù¥ - </font><font>Ù§]</font><font>.</font></p>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font color="#ff0000"><font><span lang="ar-EG">ب</span></font></span></font><font>)
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">دراسات
-اقتصادية </span></font></span></font><font>(</font><font><span lang="ar-SA"><font><span lang="ar-EG">الحاجة
-الحياتية </span></font></span></font><font>-
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">التكلفة
-</span></font></span></font><font>-
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">التمويل
-</span></font></font><font color="#ff0000"><font><span lang="ar-EG">–</span></font></font><font color="#ff0000"><font><span lang="ar-EG">
-الربح</font></span></font></font></span></font><font color="#ff0000"><font>):</font></font></p>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font><span lang="ar-EG">فهل
-المنتج يمثل حاجة حقيقية تسهم في إطعام
-الناس من الجوع وأمنهم من الخوف، أم هو
-منتج عبثي لا قيمة له في منظومة الجوع
-والخوف؟</span></font></span></font></p>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font><span lang="ar-EG">ثم
-ما هي أولويات المجتمع</span></font></span></font><font>..
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">إنتاج
-منتجات ترفيهية أو تكميلية أم منتجات
-الإطعام من الجوع والأمن من الخوف؟</span></font></span></font></p>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font><span lang="ar-EG">في
-غياب إستراتيجية تجيب عن هذا السؤال يندفع
-الناس إلى منتجات عبثية أو تكميلية، سواء
-من أنفسهم أو بغواية قوى خارجية، وينفقون
-فيها أموالهم ثم تكون وبالا عليهم</span></font></span></font><font>.</font></p>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font><span lang="ar-EG">وإجابة
-السؤال</span></font></span></font><font>:
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">ماذا
-ننتج؟ ينبغي أن يشارك فيها علماء من كافة
-التخصصات يحملون في صدورهم قيم المجتمع
-واضحة جلية، فإذا قرروا فيما ينفقون نظروا
-إلى التكلفة وإلى التمويل وإلى العائد
-من هذا كله على الناس وحياتهم، وقبل هذا
-كله ينبغي أن يتفرغ هؤلاء النفر من العلماء
-لوضع خريطة تنموية شاملة يتضح منها طيف
-التنمية المرجو</span></font></span></font><font>.
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">هذا
-الطيف الذي حددناه في بعض بحوثنا التنموية
-على أنه يشمل ثلاثة عناصر</span></font></span></font><font>:
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">تنمية
-البقاء، تنمية النماء، تنمية السبق</span></font></span></font><font>.</font></p>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font><span lang="ar-EG">وكل
-عنصر ينتج عالم أشيائه ويحتاج إلى مهارات
-معينة، ويخاطب أسواقا معينة، فتنمية
-البقاء تهتم بالصناعات الصغيرة المتوطنة
-في الأمة، والتي عاشت بها قرونا متتالية</span></font></span></font><font>.</font></p>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font><span lang="ar-EG">وتنمية
-البقاء في بلادنا مستهدفة دائما من الغزو
-التنموي الذي يحاول أن يطمس على طرائقنا
-في الحياة لصالح عالم أشيائه الذي لا نجيد
-صنعه ويحولنا إلى عبيد لأنماطه هو في
-الطعام والشراب والسكن واللباس وفي كل
-مناحي الحياة؛ ولذلك فاستخدام الهندسة
-في تطوير تنمية البقاء والحفاظ عليها من
-الأهداف الأساسية لصانع القرار التنموي</span></font></span></font><font>.</font></p>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font><span lang="ar-EG">وتنمية
-النماء هي المختصة بعالم الأشياء الذي
-أفرزته العلوم المعاصرة وأصبح ملكا
-للبشرية ويدخل في ذلك كل ما أضافه العلم
-منذ ثورة البخار حتى ثورة الاتصالات</span></font></span></font><font>.</font></p>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font><span lang="ar-EG">وتنمية
-السبق هي خصوصية كل أمة فيما عندها من
-إمكانيات طبيعية أو تاريخية تستطيع
-استخدامها في سبق مع أمم أخرى</span></font></span></font><font>.
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">فهناك
-أمم تملك رياحا جارية، وهناك أمم تملك
-شمسا مشرقة، وهناك أمم تملك مياها عذبة،
-وهناك أمم تملك ثروة من الآثار، والعلم
-والتكنولوجيا يستطيع أن يحول هذه الهبات
-إلى منتجات تنافسية وإلى قوة تنموية</span></font></span></font><font>.</font></p>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font><span lang="ar-EG">والسؤال
-التالي</span></font></span></font><font>:
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">من
-الذي ينفق على فكرة تقنية حتى تصبح منتجا
-تنمويا يستخدمه الناس في حياتهم ويلبي
-حاجة لهم فيها؟ من الذي سيدفع المال اللازم
-للبحوث النظرية والتجريبية؟</span></font></span></font></p>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font><span lang="ar-EG">إن
-عالم الهندسة المعاصر يقوم على الإنفاق
-المكثف في عمليات البحث والتطوير ويحتاج
-إلى احتشاد العلماء وتراكم خبراتهم،
-والقرآن ينبهنا إلى أنواع من المنافقين
-والتنمويين الذين يعرفون أن الاحتشاد
-والتراكم ضروري لأي نهضة تنموية ولا
-يريدون لهذا الاحتشاد وهذا التراكم أن
-يحدثا، ولذلك فإنهم </span></font></span></font><font>&quot;</font><font><span lang="ar-SA"><font><span lang="ar-EG">هُمُ
-الَّذِينَ يَقُولُونَ لَا تُنفِقُوا
-عَلَى مَنْ عِندَ رَسُولِ اللَّهِ حَتَّى
-يَنفَضُّوا</span></font></span></font><font>&quot;</font><font>
-[</font><font><span lang="ar-SA"><font><span lang="ar-EG">المنافقون
-</span></font></span></font><font>:
-Ù§]</font><font>. </font><font><span lang="ar-SA"><font><span lang="ar-EG">ومن
-هم هؤلاء الذين عند رسول الله إلا العلماء
-والفقهاء والمجاهدين من كل نوع وفي كل
-مجال</span></font></span></font><font>.</font></p>
-<p class="western" align="right">
-<font><font><span lang="ar-EG">ونعود
-إلى السؤال</span></font></font><font>:
-</font><font><font><span lang="ar-EG">من
-الذي ينفق على البحوث والتطوير؟</span></font></font></p>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font><span lang="ar-EG">نحن
-نظن أن هناك ثلاث جهات ينبغي أن تنسق فيما
-بينها للإنفاق على البحوث والتطوير، وهي</span></font></span></font><font>:
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">الدولة،
-المال المغامر، الأوقاف</span></font></span></font><font>.</font></p>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font><span lang="ar-EG">دور
-الدولة ينبغي أن يركز على وضع إستراتيجية
-واضحة للنشاط البحثي والتطويري، وكذلك
-لإنشاء مجموعة من المراكز الأساسية التي
-قد لا يقبل عليها المال المغامر أو لا
-تفقهها الأمة فتتوقف عليها</span></font></span></font><font>.
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">ونحن
-ندرك أن قاطرة الصناعات الدفاعية يمكن
-أن تأخذ معها كثيرا من الصناعات الحياتية
-الأخرى، ولذلك فاهتمام الدولة بوضع
-إستراتيجية للأمن القومي وما يستدعيه من
-صناعات متقدمة ودعوة الناس إليها ليشاركوا
-فيها هو من أهم واجبات الدولة الحديثة،
-حينئذ يندفع أصحاب المال المغامر ليلتقطوا
-من أهداف هذه الإستراتيجية ما يوافق هواهم
-وإمكانياتهم، هادفين إلى الربح المشروع
-في غاية قومية مطلوبة، وكذلك يوقف أهل
-الخير من أموالهم ما يحققون به هدفا من
-أهداف هذه الإستراتيجية المطلوبة</span></font></span></font><font>.</font></p>
-<p class="western" align="right">
-<font color="#ff0000"><font><font><span lang="ar-EG">ج</span></font></font><font>)
-</font><font><font><span lang="ar-EG">دراسات
-بيئية وحضارية</span></font></font></font></p>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font><span lang="ar-EG">إن
-المارد التكنولوجي إذا انطلق بلا ضوابط
-قيمية يمكن أن يكون وبالا على الإنسانية
-ومدمرا للحضارة ومهلكا للحرث والنسل</span></font></span></font><font>.</font></p>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font><span lang="ar-EG">وفي
-كتابه الرائع </span></font></span></font><font>(The
-Entropy)</font><font> </font><font><span lang="ar-SA"><font><span lang="ar-EG">يصل
-المدى بالأستاذ </span></font></span></font><font>&quot;</font><font><span lang="ar-SA"><font><span lang="ar-EG">جيمي
-رفكن</span></font></span></font><font>&quot;
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">إلى
-القول إن التكنولوجيا المعاصرة ستصل
-بالإنسان إلى تدمير نفسه وتدمير الكون
-من حوله، ويدعو بكل قوة إلى العودة إلى
-ما قبل الثورة الصناعية الأولى </span></font></span></font><font>(</font><font><span lang="ar-SA"><font><span lang="ar-EG">ثورة
-البخار</span></font></span></font><font>)</font><font><span lang="ar-SA"><font><span lang="ar-EG">،
-وهو في رأيي تشاؤم مفرط وكفر تام بالتكنولوجيا
-المعاصرة وما أدت إليه من ظهور الفساد في
-البر والبحر بطريقة لا يمكن تصحيحها في
-كثير من الأحيان</span></font></span></font><font>.</font></p>
-<p class="western" align="right">
-<font><font><span lang="ar-EG">ونحن
-هنا سنتحدث عن الضوابط التي يمكن أن تصحح
-المسار لعل الله يقبل التوبة من عباده
-الذين أسرفوا على أنفسهم وعلى بيئتهم</span></font></font><font>.</font></p>
-<p class="western" align="right">
-<font color="#ff0000"><font><font><span lang="ar-EG">الضابط
-الأول</span></font></font><font>:
-</font><font><font><span lang="ar-EG">بلوغ
-الشدة العلمية والتقنية قبل استخراج
-الكنوز المخفية</span></font></font><font>.</font></font></p>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font><span lang="ar-EG">أودع
-الله في جوف الأرض كنوزا هائلة من المعادن
-والطاقة</span></font></span></font><font>.
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">وللأسف
-وقعت هذه الكنوز في أيدينا قبل أن نبلغ
-أشدنا علما وقيما وحضارة في استخراجها
-والتعامل معها، فأسرفنا وبذرنا وأفسدنا
-هواءنا وأرضنا بطريقة لا يمكن الخروج
-منها</span></font></span></font><font>.
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">أو
-بتعبير هندسي زدنا دالة الاضمحلال الحراري
-</span></font></span></font><font>(Entropy)</font><font>
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">زيادة
-هائلة كما كتب من قبل الأستاذ </span></font></span></font><font>&quot;</font><font><span lang="ar-SA"><font><span lang="ar-EG">جيمي
-رفكن</span></font></span></font><font>&quot;
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">في
-كتابه الذي أشرنا إليه في هذه الدراسة</span></font></span></font><font>.</font></p>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font><span lang="ar-EG">ويحكي
-لنا القرآن الكريم قصة موسى عليه السلام
-مع العبد الصالح في رحلتهما الحضارية
-التعليمية التي رافق فيها نبي الله موسى
-هذا العبد الصالح ليعلمه مما علمه الله
-رشدا</span></font></span></font><font>.
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">نعم
-ثمرة هذه الرحلة هي تعليم </span></font></span></font><font>&quot;</font><font><span lang="ar-SA"><font><span lang="ar-EG">الرشد</span></font></span></font><font>&quot;
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">في
-التعامل في كل شيء</span></font></span></font><font>.
-&quot;</font><font>
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">فَانطَلَقَا
-حَتَّى إِذَا أَتَيَا أَهْلَ قَرْيَةٍ
-اسْتَطْعَمَا أَهْلَهَا فَأَبَوْا أَن
-يُضَيِّفُوهُمَا فَوَجَدَا فِيهَا
-جِدَاراً يُرِيدُ أَنْ يَنقَضَّ فَأَقَامَهُ
-قَالَ لَوْ شِئْتَ لَاتَّخَذْتَ عَلَيْهِ
-أَجْراً </span></font></span></font><font>[</font><font><span lang="ar-SA"><font><span lang="ar-EG">الكهف
-</span></font></span></font><font>:
-Ù§Ù§]</font><font>.</font></p>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font><span lang="ar-EG">فموسى
-لم يفهم لماذا يقيم العبد الصالح هذا
-الجدار الذي يكاد أن ينقض خدمة لقوم بخلاء
-أبوا أن يضيفوهما، فقال له العبد الصالح</span></font></span></font><font>:
-&quot;</font><font> </font><font><span lang="ar-SA"><font><span lang="ar-EG">وَأَمَّا
-الْجِدَارُ فَكَانَ لِغُلَامَيْنِ
-يَتِيمَيْنِ فِي الْمَدِينَةِ وَكَانَ
-تَحْتَهُ كَنزٌ لَّهُمَا وَكَانَ
-أَبُوهُمَا صَالِحاً فَأَرَادَ رَبُّكَ
-أَنْ يَبْلُغَا أَشُدَّهُمَا وَيَسْتَخْرِجَا
-كَنزَهُمَا رَحْمَةً مِّن رَّبِّكَ وَمَا
-فَعَلْتُهُ عَنْ أَمْرِي ذَلِكَ تَأْوِيلُ
-مَا لَمْ تَسْطِع عَّلَيْهِ صَبْراً</span></font></span></font><font>&quot;</font><font>
-[</font><font><span lang="ar-SA"><font><span lang="ar-EG">الكهف
-</span></font></span></font><font>:
-Ù¨Ù¢]</font><font>.</font></p>
-<p class="western" align="right">
-<font><font><span lang="ar-EG">فكأن
-شرط استخراج الكنوز المخفية هو بلوغ الشدة
-في كل شيء، سواء كانت شدة علمية وكونية
-أو كانت شدة في الوعي بما نفعله بأنفسنا
-وبالكون من حولنا</span></font></font><font>.</font></p>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font><span lang="ar-EG">لا
-أدري إن كانت هناك فسحة من توبة لهذه
-الإنسانية أن تضبط إيقاعها مع الكنوز
-المخفية أم لا، وأحيانا أدعو الله أن لا
-نعثر على كنوز جديدة قبل أن نبلغ أشدنا،
-فنستخرجها بخلق وعلم قبل أن نبددها في
-الفضاء، فنفسد الفضاء ونفسد أنفسنا، ولا
-حول ولا قوة إلا بالله</span></font></span></font><font>.</font></p>
-<p class="western" align="right">
-<font color="#ff0000"><font><font><span lang="ar-EG">الضابط
-الثاني</span></font></font><font>:
-</font><font><font><span lang="ar-EG">القدرة
-على التناغم مع الكون المحيط من خلال
-ثلاثية </span></font></font><font>(</font><font><font><span lang="ar-EG">الفهم،
-والحب والتسخير</span></font></font><font>).</font></font></p>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font><span lang="ar-EG">اقرأ
-معي هذه الآيات من سورة النمل</span></font></span></font><font>:&quot;</font><font>
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">وَلَقَدْ
-آتَيْنَا دَاوُودَ وَسُلَيْمَانَ عِلْماً
-وَقَالَا الْحَمْدُ لِلَّهِ الَّذِي
-فَضَّلَنَا عَلَى كَثِيرٍ مِّنْ عِبَادِهِ
-الْمُؤْمِنِينَ </span></font></span></font><font>*
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">وَوَرِثَ
-سُلَيْمَانُ دَاوُودَ وَقَالَ يَا
-أَيُّهَا النَّاسُ عُلِّمْنَا مَنطِقَ
-الطَّيْرِ وَأُوتِينَا مِن كُلِّ شَيْءٍ
-إِنَّ هَذَا لَهُوَ الْفَضْلُ الْمُبِينُ</span></font><font><span lang="ar-EG">
-</span></font></span></font><font>*
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">وَحُشِرَ
-لِسُلَيْمَانَ جُنُودُهُ مِنَ الْجِنِّ
-وَالْإِنسِ وَالطَّيْرِ فَهُمْ يُوزَعُونَ</span></font><font><span lang="ar-EG">
-</span></font></span></font><font>*
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">حَتَّى
-إِذَا أَتَوْا عَلَى وَادِي النَّمْلِ
-قَالَتْ نَمْلَةٌ يَا أَيُّهَا النَّمْلُ
-ادْخُلُوا مَسَاكِنَكُمْ لَا يَحْطِمَنَّكُمْ
-سُلَيْمَانُ وَجُنُودُهُ وَهُمْ لَا
-يَشْعُرُونَ</span></font><font><span lang="ar-EG">
-</span></font></span></font><font>*
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">فَتَبَسَّمَ
-ضَاحِكاً مِّن قَوْلِهَا وَقَالَ رَبِّ
-أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ
-الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَى
-وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحاً
-تَرْضَاهُ وَأَدْخِلْنِي بِرَحْمَتِكَ
-فِي عِبَادِكَ الصَّالِحِينَ</span></font></span></font><font>&quot;</font><font>
-[</font><font><span lang="ar-SA"><font><span lang="ar-EG">النمل
-</span></font></span></font><font>:</font><font>
-Ù¡Ù¥ -</font><font> Ù¡Ù©]</font><font>.
-</font>
-</p>
-<p class="western" align="right">
-<font><font><span lang="ar-EG">ومنطق
-الطير هو طريقة عيشة في الحياة وماذا يفعل
-فيها</span></font></font><font>.
-</font><font><font><span lang="ar-EG">والنمل
-في قصة سليمان لم يأت إلى وادي الناس،
-وإنما ذهب الناس إلى واديه، أي إلى بيئته
-التي يسكن فيها، وسليمان علم منطق هذه
-المخلوقات ويتعامل معها بحرص شديد</span></font></font><font>.</font></p>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font><span lang="ar-EG">فهو
-أولا فهم منطقها ويتفاعل معه بحب
-</span></font></span></font><font>(</font><font><span lang="ar-SA"><font><span lang="ar-EG">فَتَبَسَّمَ
-ضَاحِكاً مِّن قَوْلِهَا</span></font></span></font><font>)
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">ثم
-يتركها لما سخرها الله من عمل في حياتها</span></font></span></font><font>.</font></p>
-<p class="western" align="right">
-<font><font><span lang="ar-EG">لا
-أنسى مقالا قرأته في إحدى المجلات الأمريكية
-لعالم أمريكي يقول فيه</span></font></font><font>:
-</font><font><font><span lang="ar-EG">إنه
-لولا النمل لما كان على ظهر الأرض حياة،
-ذلك أنه لولاه لتعطن سطح الأرض ولما صلح
-للزراعة والحياة فوقه</span></font></font><font>.
-</font><font><font><span lang="ar-EG">فانظر
-</span></font></font><font>-
-</font><font><font><span lang="ar-EG">رحمك
-الله </span></font></font><font>-
-</font><font><font><span lang="ar-EG">إلى
-هذا الاختراع المجرم الذي اسمه </span></font></font><font>&quot;</font><font><font><span lang="ar-EG">المبيدات
-الحشرية</span></font></font><font>&quot;
-</font><font><font><span lang="ar-EG">وانظر
-كيف نستخدمها بسفه وجهل فنهلك كل هذه
-الحشرات التي نجهل نفعها لنا وأنها جزء
-من حياتنا، إن هلكت فإنا هالكون</span></font></font><font>.</font></p>
-<p class="western" align="right">
-<font><font><span lang="ar-EG">وفي
-سورة النمل أيضا قصة سليمان مع الهدهد،
-ذلك الطائر الجميل الذكي والذي أرسله في
-مهمة استخباراتية إلى مملكة سبأ، وانظر
-</span></font></font><font>-
-</font><font><font><span lang="ar-EG">رحمك
-الله </span></font></font><font>-
-</font><font><font><span lang="ar-EG">إلى
-التقرير الرائع الذي وصف فيه أحوال هذه
-المملكة الاقتصادية والسياسية والعقدية
-والسلوكية في بضعة سطور، وأنا أتحدى أن
-يضاهيه أعظم ضباط المخابرات في العالم</span></font></font><font>.</font></p>
-<p class="western" align="right">
-<font color="#ff0000"><font><font><span lang="ar-EG">الضابط
-الثالث</span></font></font><font>:
-</font><font><font><span lang="ar-EG">القصد
-والاقتصاد</span></font></font><font>:</font></font></p>
-<p class="western" align="right">
-<font><font><span lang="ar-EG">والقصد
-هو أن نجعل لمشينا في الحياة قصدا، أي لا
-يكون مشينا في الحياة عبثيا</span></font></font><font>.</font></p>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font><span lang="ar-EG">فمن
-الذي يحدد </span></font></span></font><font>&quot;</font><font><span lang="ar-SA"><font><span lang="ar-EG">القصد</span></font></span></font><font>&quot;
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">من
-مشينا في الأرض؟ لقد أمرنا ربنا في القرآن
-فقال</span></font></span></font><font>:
-&quot;</font><font><span lang="ar-SA"><font><span lang="ar-EG">وَاقْصِدْ
-فِي مَشْيِكَ</span></font></span></font><font>&quot;</font><font>
-[</font><font><span lang="ar-SA"><font><span lang="ar-EG">لقمان
-</span></font></span></font><font>:
-Ù¡Ù©]</font><font><span lang="ar-SA"><font><span lang="ar-EG">،
-أي اجعل لمشيك قصدا، ثم قال في آية أخرى</span></font></span></font><font>:
-&quot;</font><font> </font><font><span lang="ar-SA"><font><span lang="ar-EG">وَعَلَى
-اللّهِ قَصْدُ السَّبِيلِ</span></font></span></font><font>&quot;</font><font>
-[</font><font><span lang="ar-SA"><font><span lang="ar-EG">النحل
-</span></font></span></font><font>:
-Ù©]</font><font><span lang="ar-SA"><font><span lang="ar-EG">،
-أي أن الله وحده هو الذي يحدد لنا القصد
-في الحياة</span></font></span></font><font>.</font></p>
-<p class="western" align="right">
-<font><font><span lang="ar-EG">ولذلك
-أدعو علماء الأمة أن يبحثوا في القرآن عن
-علم المقاصد التنموية والتي ينبغي أن
-تكون لنا هاديا في سيرنا التنموي</span></font></font><font>.</font></p>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font><span lang="ar-EG">فمثلا
-يقول القرآن</span></font></span></font><font>:
-&quot;</font><font><span lang="ar-SA"><font>أَتَبْنُونَ
-بِكُلِّ رِيعٍ آيَةً تَعْبَثُونَ </font></span></font><font>*
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">وَتَتَّخِذُونَ
-مَصَانِعَ لَعَلَّكُمْ تَخْلُدُونَ</span></font><font><span lang="ar-EG">
-</span></font></span></font><font>*
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">وَإِذَا
-بَطَشْتُم بَطَشْتُمْ جَبَّارِينَ</span></font></span></font><font>&quot;</font><font>
-[</font><font><span lang="ar-SA"><font><span lang="ar-EG">الشعراء
-</span></font></span></font><font>:</font><font>
-Ù¡Ù¢Ù¨ -</font><font> Ù¡Ù£Ù ]</font><font>.</font></p>
-<p class="western" align="right">
-<font><font><span lang="ar-EG">فهذه
-الآية تحدد ثلاث مقاصد جاهلية ينبغي ألا
-يقع فيها المخطط التنموي المؤمن</span></font></font><font>:
-</font><font><font><span lang="ar-EG">الأبنية
-الضخمة التي لا طائل من ورائها ولا فائدة
-منها، أو الأبنية التي يظنون أنها ستخلدهم
-في الكون دون عائد على الناس بالخيرات،
-أو الأبنية التنموية التي تؤدي إلى البطش
-الجبار بالناس والبيئة</span></font></font><font>.</font></p>
-<p class="western" align="right">
-<font><font><span lang="ar-EG">إنك
-تنظر أحيانا إلى حركة المدينة العربية
-المعاصرة فتجد ضجيجا ومسافات هائلة تقطع
-في اليوم الواحد ما قطعها أجدادنا في
-عمرهم كله، ووقودا يستنفد وجهدا يبذل
-وبيئة تفسد ثم لا تجد في نهاية الأمر عائدا
-كريما يعود على الناس من هذه الحركة
-العبثية آناء الليل وأطراف النهار</span></font></font><font>..
-</font><font><font><span lang="ar-EG">لا
-شيء يعود على الجسد، ولا شيء يعود على
-الروح، والمنظر في جملته يعبر عن القرآن
-في آيات رائعة</span></font></font><font>.</font></p>
-<p class="western" align="right">
-<font>&quot;</font><font><span lang="ar-SA"><font><span lang="ar-EG">وَالْعَادِيَاتِ
-ضَبْحاً</span></font><font><span lang="ar-EG">
-</span></font></span></font><font>*
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">فَالْمُورِيَاتِ
-قَدْحاً </span></font></span></font><font>*
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">فَالْمُغِيرَاتِ
-صُبْحاً </span></font></span></font><font>*
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">فَأَثَرْنَ
-بِهِ نَقْعاً </span></font></span></font><font>*
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">فَوَسَطْنَ
-بِهِ جَمْعاً</span></font></span></font><font>&quot;</font><font>
-[</font><font><span lang="ar-SA"><font><span lang="ar-EG">العاديات
-</span></font></span></font><font>:</font><font>
-Ù¡ -</font><font> Ù¥]</font><font>.</font></p>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font><span lang="ar-EG">النفوس
-اللاهثة في عدوها غير القاصد لربها، سوف
-تقدح نارا تظنها نور الصباح الواعد،
-فتندفع إلى هذا الصباح في غارة هوجاء
-فتثير من حولها سحابة من الرمال لا تكاد
-ترى منها الطريق، ثم تجد نفسها في النهاية
-في نقطة الصفر حيث بدأت، ولا حول ولا قوة
-إلا بالله</span></font></span></font><font>.</font></p>
-<p class="western" align="right">
-<font><font><span lang="ar-EG">إن
-كثيرا من عقلاء الغرب بدءوا يتنبهون إلى
-هذه العبثية التنموية وبدءوا يكتبون،
-ولكن من الذي يسمع ومن الذي يفيق </span></font></font><font>(</font><font><font><span lang="ar-EG">انظر
-إلى كتاب</span></font></font><font>:
-</font><font><font><span lang="ar-EG">الصغير
-هو الأجمل لمؤلفه شوميكن وغيره من هذه
-الكتب</span></font></font><font>).</font></p>
-<p class="western" align="right">
-<font><font><span lang="ar-EG">هذا
-عن القصد فماذا عن الاقتصاد</span></font></font><font>..
-</font><font><font><span lang="ar-EG">كيف
-نقتصد في الطاقة عندما نخطط أماكن العمل
-بعيدا عن أماكن السكن، وكيف نحافظ على
-الطاقة ونحن نشجع الناس على اقتناء
-السيارات ونهمل النقل العام، وكيف نقتصد
-في الطاقة ونحن نخترع كل يوم أجهزة ترفيه
-لا تسمن ولا تغني من جوع</span></font></font><font>!!
-</font><font><font><span lang="ar-EG">هل
-نحن في حاجة إلى هراشة كهربائية؟</span></font></font><font>!
-</font><font><font><span lang="ar-EG">هل
-نحن في حاجة إلى سواك كهربائي؟</span></font></font><font>!
-</font><font><font><span lang="ar-EG">لماذا
-لا نتحمل تقلبات الجو المعقولة ولا نسرف
-في المكيفات الهوائية؟</span></font></font><font>!
-</font><font><font><span lang="ar-EG">وماذا
-عن ثورة الاتصالات لخدمة </span></font></font><font>&quot;</font><font><font><span lang="ar-EG">الرغي</span></font></font><font>&quot;
-</font><font><font><span lang="ar-EG">الشخصي
-والجماعي وتزيين سلع الأغنياء لمص دماء
-الفقراء</span></font></font><font>.</font></p>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font><span lang="ar-EG">الحقيقة
-أن التخطيط التنموي ومنه التخطيط التكنولوجي
-لا بد أن يلتزم بالاقتصاد في منتجاته التي
-ينبغي أن تحافظ على الطاقة فلا تبدد، وعلى
-الجهد الإنساني فلا يضيع، متأسين بقول
-الله تعالى</span></font></span></font><font>:
-&quot;</font><font> </font><font><span lang="ar-SA"><font><span lang="ar-EG">وَلاَ
-تَجْعَلْ يَدَكَ مَغْلُولَةً إِلَى
-عُنُقِكَ وَلاَ تَبْسُطْهَا كُلَّ
-الْبَسْطِ فَتَقْعُدَ مَلُوماً مَّحْسُوراً</span></font></span></font><font>&quot;</font><font>
-[</font><font><span lang="ar-SA"><font><span lang="ar-EG">الإسراء
-</span></font></span></font><font>:
-Ù¢Ù©]</font><font>.</font></p>
-<p class="western" align="right">
-<font color="#ff0000"><font><font><span lang="ar-EG">الضابط
-الرابع</span></font></font><font>:
-</font><font><font><span lang="ar-EG">الوظيفية
-والجمال في كل تصميم نصممه وفي كل منتج
-ننتجه</span></font></font><font>.</font></font></p>
-<p class="western" align="right">
-<font><span lang="ar-SA"><font><span lang="ar-EG">يجب
-أن نحرص على الوظيفية والجمال</span></font></span></font><font>.
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">هذا
-ما تعلمناه من القرآن</span></font></span></font><font>:
-&quot;</font><font><span lang="ar-SA"><font><span lang="ar-EG">وَالأَنْعَامَ
-خَلَقَهَا لَكُمْ فِيهَا دِفْءٌ وَمَنَافِعُ
-وَمِنْهَا تَأْكُلُونَ</span></font><font><span lang="ar-EG">
-</span></font></span></font><font>*
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">وَلَكُمْ
-فِيهَا جَمَالٌ حِينَ تُرِيحُونَ وَحِينَ
-تَسْرَحُونَ</span></font><font><span lang="ar-EG">
-</span></font></span></font><font>*
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">وَتَحْمِلُ
-أَثْقَالَكُمْ إِلَى بَلَدٍ لَّمْ
-تَكُونُواْ بَالِغِيهِ إِلاَّ بِشِقِّ
-الأَنفُسِ إِنَّ رَبَّكُمْ لَرَءُوفٌ
-رَّحِيمٌ </span></font></span></font><font>*
-</font><font><span lang="ar-SA"><font><span lang="ar-EG">وَالْخَيْلَ
-وَالْبِغَالَ وَالْحَمِيرَ لِتَرْكَبُوهَا
-وَزِينَةً وَيَخْلُقُ مَا لاَ تَعْلَمُونَ</span></font></span></font><font>&quot;</font><font>
-[</font><font><span lang="ar-SA"><font><span lang="ar-EG">النحل
-</span></font></span></font><font>:</font><font>
-Ù¥ -</font><font> Ù¨]</font><font>.</font></p>
-<p class="western" align="right">
-<font><font><span lang="ar-EG">والقبح
-والجمال لهما ساحات واسعة، ولكن معظم
-البشر يتفقون على أجزاء كبيرة من هذه
-المساحة، ويتبقى بعد ذلك جزء شخصي</span></font></font><font>.
-</font><font><font><span lang="ar-EG">وقد
-يكون المجتمع قد أفسد الذوق العام عند
-الأشخاص نتيجة التنافس على بيع السلع،
-حينئذ ينبغي على الإصلاحيين في الأمة أن
-يعملوا على إعادة الذوق العام وتبني قيم
-الأمة الجمالية</span></font></font><font>.</font></p>
-<p class="western" align="right">
-<font color="#ff0000"><font><font><span lang="ar-EG">الضابط
-الخامس</span></font></font><font>:
-</font><font><font><span lang="ar-EG">تعظيم
-قيمة العمل الجماعي في تصميم أي عمل تقني</span></font></font><font>.</font></font></p>
-<p class="western" align="right">
-<font><font><span lang="ar-EG">ينبغي
-أن نبتعد عن الميكنة إن استطعنا الاستغناء
-عنها بتقسيم العمل على أكبر قدر من الناس
-يتشاركون فيه</span></font></font><font>.
-</font><font><font><span lang="ar-EG">إننا
-لا نريد تكنولوجيا يشترك في إبداعها نفر
-قليلون وتقوم فيها الآلة بكل شيء عوضا عن
-الإنسان، فذلك إهدار للطاقة وإهمال
-للإنسان</span></font></font><font>.</font></p>
-<p class="western" align="right">
-<font><font><span lang="ar-EG">إن
-الإنسان في حاجة إلى العمل حتى لو كان هذا
-العمل يدويا بسيطا، وإحلال الآلة بديلا
-عن الإنسان لا بد أن يكون بقدر، وإلا فإننا
-لا ندري العواقب النفسية والاجتماعية
-التي قد تحيط بالمجتمع</span></font></font><font>.</font></p>
-<p class="western" align="right">
-<font color="#ff0000"><font><font><span lang="ar-EG">الضابط
-السادس</span></font></font><font>:
-</font><font><font><span lang="ar-EG">الضابط
-البيئي</span></font></font><font>.</font></font></p>
-<p class="western" align="right">
-<font><font><span lang="ar-EG">للأسف
-فإن الحضارة الغربية لم تضع هذا الضابط
-في حساباتها وهي تتمدد تكنولوجيا، وإنهم
-ليكادون يفسدون الأرض وما عليها وما
-تحتها، ونحن معشر الشعوب الإسلامية التي
-لم تسهم كثيرا في إفساد البيئة علينا أن
-نأخذ حذرنا، فإفساد البيئة ليس جريمة
-دنيوية فحسب، ولكنه أيضا جريمة أخلاقية
-سيحاسبنا الله عليها حسابا عسيرا</span></font></font><font>.</font></p>
-<p class="western" align="right">
-<font><font><span lang="ar-EG">انظر
-إلى مخلفاتنا الصناعية ومخلفاتنا الذرية،
-وانظر إلى طرائقنا في البناء والكساء
-وإلى نوعية الطعام الذي نأكله</span></font></font><font>.
-</font><font><font><span lang="ar-EG">حياة
-صناعية مفسدة للبيئة من حولنا</span></font></font><font>.</font></p>
-<p class="western" align="right">
-<font><font><span lang="ar-EG">كنا
-ونحن صغار ننفر كل فترة لننزع الحشائش من
-جانب الترع التي تمر بحقولنا وكنا نفعل
-ذلك بأيدينا، حتى جاء اليوم الذي نرش فيه
-مبيدات على جانبي النهر لنقتل هذه الحشائش</span></font></font><font>.
-</font><font><font><span lang="ar-EG">ولن
-أنسى يوما رأيت فيه الأسماك نافقة في
-النهر بسبب هذه المبيدات، وفقدت في تلك
-الأيام كلبين للحراسة ظنا أن هذا السمك
-صالح للأكل فسبحا في النهر وأكلا منه
-فماتا</span></font></font><font>.</font></p>
-<p class="western" align="right">
-<font><font><span lang="ar-EG">وما
-فعله الكلبان جهلا نفعله نحن بأنفسنا كل
-يوم حتى أصبحنا لا ندري ماذا نأكل وماذا
-نشرب وبماذا نتداوى</span></font></font><font>.</font></p>
-<p class="western" align="right">
-<font><font><span lang="ar-EG">المهم
-أن ضابط البيئة ينبغي أن يكون حاضرا دائما
-في عملنا الهندسي ولا نغفله أبدا</span></font></font><font>.</font></p>
-<p class="western" align="right">
-<font color="#ff0000"><font><font><span lang="ar-EG">الضابط
-السابع</span></font></font><font>:
-</font><font><font><span lang="ar-EG">ملائمة
-التكنولوجيا لإمكانيات المجتمع</span></font></font><font>.</font></font></p>
-<p class="western" align="right">
-<font><font><span lang="ar-EG">كل
-تكنولوجيا تحتاج إلى مناخ معين من التعليم
-والتدريب والخامات والبيئة الأساسية
-والأسواق</span></font></font><font>.</font></p>
-<p class="western" align="right">
-<font><font><span lang="ar-EG">والأمن
-القومي يستدعي أن نملك هذه الإمكانيات
-أو نتأكد من القدرة على الحصول عليها من
-السوق العالمي</span></font></font><font>.</font></p>
-<p class="western" align="right">
-<font><font><span lang="ar-EG">إن
-هناك تكنولوجيات عالمية محظورة على العالم
-الثالث، وهناك جداول معروفة لهذه العناصر
-التقنية</span></font></font><font>.
-</font><font><font><span lang="ar-EG">ولذلك
-فالمخطط التكنولوجي ينبغي أن يختار
-تكنولوجيا يملك عناصرها ويعمل في نفس
-الوقت على الامتلاك المستقبلي للتكنولوجيا
-التي لا يملك عناصرها من طريق عمليات
-البحوث والتطوير</span></font></font><font>.</font></p>
+  :root {
+    --ink: #2b2722; --muted: #6f665b; --paper: #fbf8f2; --accent: #7a4b1f; --rule: #e4dccd;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--paper); }
+  body {
+    margin: 0; color: var(--ink);
+    font-family: "Noto Naskh Arabic", "Amiri", "Traditional Arabic", "Arial", serif;
+    font-size: 1.18rem; line-height: 2.05;
+  }
+  main { max-width: 46rem; margin: 0 auto; padding: 3.5rem 1.5rem 5rem; }
+  header { text-align: center; margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--rule); }
+  h1 { font-family: "Amiri", serif; font-size: 2.4rem; line-height: 1.5; margin: 0 0 .5rem; color: var(--accent); }
+  .author { font-size: 1.25rem; color: var(--muted); margin: 0; }
+  h2 { font-family: "Amiri", serif; font-size: 1.75rem; color: var(--accent); margin: 3rem 0 1rem; padding-bottom: .3rem; border-bottom: 1px solid var(--rule); }
+  h3 { font-family: "Amiri", serif; font-size: 1.4rem; margin: 2.2rem 0 .6rem; color: var(--ink); }
+  p { margin: 0 0 1.1rem; text-align: justify; text-justify: inter-word; }
+  .ayah { font-family: "Amiri", serif; color: #2f5d3a; font-size: 1.08em; }
+  p.ayah-block { text-align: center; margin: 1.3rem 0; }
+  p.verse { text-align: center; font-family: "Amiri", serif; font-size: 1.15em; color: var(--accent); margin: 1.2rem 0; }
+  nav.toc { background: #f3eee4; border-radius: 6px; padding: 1rem 1.4rem; margin-bottom: 2.5rem; font-size: 1.05rem; }
+  nav.toc strong { display: block; margin-bottom: .3rem; color: var(--accent); }
+  nav.toc ol { margin: 0; padding: 0; list-style: none; }
+  nav.toc a { color: var(--ink); text-decoration: none; }
+  nav.toc a:hover { color: var(--accent); text-decoration: underline; }
+  ol.steps { list-style: none; padding: 0; margin: 0 0 1.4rem; counter-reset: none; }
+  ol.steps li { margin-bottom: .15rem; }
+  ol.steps .n, ul.triad .n { display: inline-block; min-width: 2rem; color: var(--accent); font-weight: 600; }
+  ol.steps li.hl { font-weight: 600; }
+  ul.triad { list-style: none; padding: 0; margin: 0 0 1.2rem; }
+  ul.triad li { margin-bottom: .2rem; }
+  ul.triad b { color: var(--accent); }
+  footer { text-align: center; color: var(--muted); margin-top: 3rem; font-size: 1rem; }
+  @media (max-width: 600px) { body { font-size: 1.06rem; } h1 { font-size: 1.9rem; } main { padding-top: 2rem; } }
+  @media print { html { background: #fff; } nav.toc { display: none; } main { padding: 0; } }
+</style>
+</head>
+<body>
+<div style="background:#1a6e3c;color:#fff;padding:0.5rem 1rem;font-family:Cairo,sans-serif;font-size:0.95rem;text-align:right"><a href="https://fiqh-hadary.com" style="color:#fff;text-decoration:none">&#8594; العودة إلى الموقع</a></div>
+<main>
+<header>
+  <h1>التفاعل بين عالم القيم والعمل الهندسي</h1>
+  <p class="author">د. سيد دسوقي حسن</p>
+</header>
+<nav class="toc"><strong>المحتويات</strong><ol>
+<li><a href="#s1">العمل الهندسي وعناصره</a></li>
+<li style="margin-right:1.4rem"><a href="#s2">أ) دوافع أخلاقية لإعمار الأرض</a></li>
+<li style="margin-right:1.4rem"><a href="#s3">ب) دراسات اقتصادية</a></li>
+<li style="margin-right:1.4rem"><a href="#s4">ج) دراسات بيئية وحضارية</a></li>
+</ol></nav>
+<article>
+<p>يظن بعض الناس أن العمل الهندسي عمل مجرد لا علاقة له بعالم القيم السائد في المجتمع، والحق أن عالم القيم يدخل في إنشاء العمل الهندسي نفسه، وهو الذي يضبطه ويوجهه إلى مقاصد حياتية مرتبطة به. وفي هذه الصفحات أحاول أن أحلل هذه العلاقة المتشابكة بين عالم القيم وعالم العمل الهندسي، والله الموفق.</p>
 
-</div></div></body>
+<h2 id="s1">العمل الهندسي وعناصره</h2>
+<p>يمر العمل الهندسي بالمراحل الآتية:</p>
+<ol class="steps">
+<li class="hl"><span class="n">&#x0661;.</span> دوافع أخلاقية لإعمار الأرض.</li>
+<li><span class="n">&#x0662;.</span> فكرة تقنية (اختراعات وحِيَل).</li>
+<li><span class="n">&#x0663;.</span> نموذج أولي.</li>
+<li><span class="n">&#x0664;.</span> اختبارات معملية وميدانية.</li>
+<li><span class="n">&#x0665;.</span> دراسات تحليلية ونمذجة رياضية وطبيعية.</li>
+<li><span class="n">&#x0666;.</span> تصميمات لنموذج متقدم.</li>
+<li><span class="n">&#x0667;.</span> اختبارات نهائية معملية وميدانية.</li>
+<li class="hl"><span class="n">&#x0668;.</span> دراسات اقتصادية (الحاجة الحياتية، التكلفة، التمويل، الربح).</li>
+<li class="hl"><span class="n">&#x0669;.</span> دراسات بيئية وحضارية.</li>
+<li><span class="n">&#x0661;&#x0660;.</span> تصنيع كمي للنموذج المتقدم.</li>
+<li><span class="n">&#x0661;&#x0661;.</span> اختبارات نهائية.</li>
+<li><span class="n">&#x0661;&#x0662;.</span> تسويق.</li>
+</ol>
+<p>ويتفاعل عالم القيم مع العمل الهندسي في ثلاثة من هذه العناصر: الأول والثامن والتاسع.</p>
+
+<h3 id="s2">أ) دوافع أخلاقية لإعمار الأرض</h3>
+<p>يقول الله تعالى: <span class="ayah">﴿هُوَ الَّذِي جَعَلَ لَكُمُ الْأَرْضَ ذَلُولًا فَامْشُوا فِي مَنَاكِبِهَا وَكُلُوا مِن رِّزْقِهِ وَإِلَيْهِ النُّشُورُ﴾</span> [الملك: &#x0661;&#x0665;]، أي أن من مقاصد الدين أن يحاول الناس تذليل الأرض حتى يستطيعوا المشي فيها لإنتاج متطلبات حياتهم.</p>
+<p>والمشي في المناكب يعني السعي الدؤوب لحل كل ما يعترض طريق الإنسان من صعوبات من أجل الحصول على متطلبات حياته، بل إن العمل على تذليل الأرض من أجل السعي فيها لتوفير الاحتياجات ليس للبشر فحسب، ولكن لكل الخلق من حولنا. والله يقول عن النحل: <span class="ayah">﴿وَأَوْحَىٰ رَبُّكَ إِلَى النَّحْلِ أَنِ اتَّخِذِي مِنَ الْجِبَالِ بُيُوتًا وَمِنَ الشَّجَرِ وَمِمَّا يَعْرِشُونَ * ثُمَّ كُلِي مِن كُلِّ الثَّمَرَاتِ فَاسْلُكِي سُبُلَ رَبِّكِ ذُلُلًا يَخْرُجُ مِن بُطُونِهَا شَرَابٌ مُّخْتَلِفٌ أَلْوَانُهُ فِيهِ شِفَاءٌ لِّلنَّاسِ إِنَّ فِي ذَٰلِكَ لَآيَةً لِّقَوْمٍ يَتَفَكَّرُونَ﴾</span> [النحل: &#x0666;&#x0668;-&#x0666;&#x0669;]، أي أننا ينبغي أن نذلل الأرض لنا ولمن حولنا من الخلائق.</p>
+<p>ويوحي إليَّ لفظ «المناكب» بالعسر الذي سيلقاه الإنسان في سعيه في الحياة، وكما يقول القرآن: <span class="ayah">﴿إِنَّ مَعَ الْعُسْرِ يُسْرًا﴾</span> [الشرح: &#x0666;]، أي أن اليسر ينشأ مع العسر خطوة بخطوة. وهذه حقيقة تحكم سعي الإنسان في الحياة، كما تحكم كل الظواهر الطبيعية.</p>
+<p>قرأت وأنا طالب في كلية الهندسة في أواخر الخمسينيات قصيدة يقول الشاعر في بيت منها:</p>
+<p class="verse">رددي في الأسر يسرى &nbsp;&nbsp;&nbsp; إن بعد العسر يسرا</p>
+<p>فقلت في نفسي: لماذا استخدم الشاعر «بعد» ولم يستخدم «مع» كما في القرآن؟</p>
+<p>وفي تلك الفترة كنا نأخذ محاضرات في الديناميكا الهوائية، وكنا نراجع منشأ قوة «الرفع» التي تحمل الطائرة إلى أعلى، فعلمنا حينئذ أن منشأ قوة الرفع هو قوة الإعاقة للطائرة، ولولا الإعاقة لما كان هناك رفع؛ فالرفع ينشأ من التفاف الهواء حول الجناح، والالتفاف ينشأ من لزوجة الهواء، ولزوجة الهواء هي أصل الإعاقة. وصدق الله العظيم: <span class="ayah">﴿إِنَّ مَعَ الْعُسْرِ يُسْرًا﴾</span> [الشرح: &#x0666;].</p>
+<p>والمشي في مناكب الأرض، وما يلقاه الإنسان فيه من العسر، له ثلاثة عناصر حتى يتحقق معه اليسر:</p>
+<ul class="triad">
+<li><span class="n">&#x0661;.</span> <b>العطاء:</b> كل امرئ يعطي من سعته.</li>
+<li><span class="n">&#x0662;.</span> <b>التقوى:</b> تحدد أهداف العطاء وآدابه.</li>
+<li><span class="n">&#x0663;.</span> <b>التصديق بالحسنى:</b> الجدوى الربانية من العطاء.</li>
+</ul>
+<p>والله يقول: <span class="ayah">﴿فَأَمَّا مَنْ أَعْطَىٰ وَاتَّقَىٰ * وَصَدَّقَ بِالْحُسْنَىٰ * فَسَنُيَسِّرُهُ لِلْيُسْرَىٰ﴾</span> [الليل: &#x0665;-&#x0667;].</p>
+
+<h3 id="s3">ب) دراسات اقتصادية (الحاجة الحياتية، التكلفة، التمويل، الربح)</h3>
+<p>هل المنتَج يمثل حاجة حقيقية تسهم في إطعام الناس من جوع وأمنهم من خوف، أم هو منتَج عبثي لا قيمة له في منظومة الجوع والخوف؟</p>
+<p>ثم ما أولويات المجتمع: إنتاج منتجات ترفيهية أو تكميلية، أم منتجات الإطعام من الجوع والأمن من الخوف؟</p>
+<p>في غياب استراتيجية تجيب عن هذا السؤال يندفع الناس إلى منتجات عبثية أو تكميلية، سواء من تلقاء أنفسهم أو بغواية قوى خارجية، وينفقون فيها أموالهم ثم تكون وبالاً عليهم.</p>
+<p>والإجابة عن سؤال «ماذا ننتج؟» ينبغي أن يشارك فيها علماء من كافة التخصصات يحملون في صدورهم قيم المجتمع واضحة جلية، فإذا قرروا فيمَ ينفقون نظروا إلى التكلفة والتمويل والعائد من هذا كله على الناس وحياتهم. وقبل هذا كله ينبغي أن يتفرغ هؤلاء النفر من العلماء لوضع خريطة تنموية شاملة يتضح منها طيف التنمية المرجوّ. هذا الطيف الذي حددناه في بعض بحوثنا التنموية على أنه يشمل ثلاثة عناصر: تنمية البقاء، وتنمية النماء، وتنمية السبق.</p>
+<p>وكل عنصر ينتج عالم أشيائه، ويحتاج إلى مهارات معينة، ويخاطب أسواقاً معينة؛ فتنمية البقاء تهتم بالصناعات الصغيرة المتوطنة في الأمة، والتي عاشت بها قروناً متتالية.</p>
+<p>وتنمية البقاء في بلادنا مستهدفة دائماً من الغزو التنموي الذي يحاول أن يطمس طرائقنا في الحياة لصالح عالم أشيائه الذي لا نجيد صنعه، ويحولنا إلى عبيد لأنماطه في الطعام والشراب والسكن واللباس وفي كل مناحي الحياة؛ ولذلك فاستخدام الهندسة في تطوير تنمية البقاء والحفاظ عليها من الأهداف الأساسية لصانع القرار التنموي.</p>
+<p>وتنمية النماء هي المختصة بعالم الأشياء الذي أفرزته العلوم المعاصرة وأصبح ملكاً للبشرية، ويدخل في ذلك كل ما أضافه العلم منذ ثورة البخار حتى ثورة الاتصالات.</p>
+<p>وتنمية السبق هي خصوصية كل أمة فيما عندها من إمكانيات طبيعية أو تاريخية تستطيع استخدامها في السبق مع الأمم الأخرى؛ فهناك أمم تملك رياحاً جارية، وأمم تملك شمساً مشرقة، وأمم تملك مياهاً عذبة، وأمم تملك ثروة من الآثار، والعلم والتكنولوجيا يستطيعان أن يحوّلا هذه الهبات إلى منتجات تنافسية وإلى قوة تنموية.</p>
+<p>والسؤال التالي: من الذي ينفق على فكرة تقنية حتى تصبح منتَجاً تنموياً يستخدمه الناس في حياتهم ويلبي حاجة لهم فيها؟ ومن الذي سيدفع المال اللازم للبحوث النظرية والتجريبية؟</p>
+<p>إن عالم الهندسة المعاصر يقوم على الإنفاق المكثف في عمليات البحث والتطوير، ويحتاج إلى احتشاد العلماء وتراكم خبراتهم. والقرآن ينبهنا إلى أنواع من المنافقين والتنمويين الذين يعرفون أن الاحتشاد والتراكم ضروريان لأي نهضة تنموية، ولا يريدون لهذا الاحتشاد وهذا التراكم أن يحدثا، ولذلك فإنهم <span class="ayah">﴿هُمُ الَّذِينَ يَقُولُونَ لَا تُنفِقُوا عَلَىٰ مَنْ عِندَ رَسُولِ اللَّهِ حَتَّىٰ يَنفَضُّوا﴾</span> [المنافقون: &#x0667;]. ومن هؤلاء الذين عند رسول الله إلا العلماء والفقهاء والمجاهدون من كل نوع وفي كل مجال؟</p>
+<p>ونعود إلى السؤال: من الذي ينفق على البحوث والتطوير؟</p>
+<p>نحن نرى أن هناك ثلاث جهات ينبغي أن تنسق فيما بينها للإنفاق على البحوث والتطوير، وهي: الدولة، ورأس المال المغامر، والأوقاف.</p>
+<p>ودور الدولة ينبغي أن يركز على وضع استراتيجية واضحة للنشاط البحثي والتطويري، وعلى إنشاء مجموعة من المراكز الأساسية التي قد لا يقبل عليها رأس المال المغامر أو لا تفقهها الأمة فتتوقف عنها. ونحن ندرك أن قاطرة الصناعات الدفاعية يمكن أن تجر معها كثيراً من الصناعات الحياتية الأخرى؛ ولذلك فاهتمام الدولة بوضع استراتيجية للأمن القومي وما تستدعيه من صناعات متقدمة، ودعوة الناس إليها ليشاركوا فيها، هو من أهم واجبات الدولة الحديثة. حينئذ يندفع أصحاب رأس المال المغامر ليلتقطوا من أهداف هذه الاستراتيجية ما يوافق هواهم وإمكانياتهم، هادفين إلى الربح المشروع في غاية قومية مطلوبة، وكذلك يوقف أهل الخير من أموالهم ما يحققون به هدفاً من أهداف هذه الاستراتيجية.</p>
+
+<h3 id="s4">ج) دراسات بيئية وحضارية</h3>
+<p>إن المارد التكنولوجي إذا انطلق بلا ضوابط قيمية يمكن أن يكون وبالاً على الإنسانية، ومدمراً للحضارة، ومهلكاً للحرث والنسل.</p>
+<p>وفي كتابه الرائع «الإنتروبيا» (Entropy) يبلغ المدى بالأستاذ جيريمي ريفكن أن يقول إن التكنولوجيا المعاصرة ستصل بالإنسان إلى تدمير نفسه وتدمير الكون من حوله، ويدعو بكل قوة إلى العودة إلى ما قبل الثورة الصناعية الأولى (ثورة البخار). وهو في رأيي تشاؤم مفرط وكفر تام بالتكنولوجيا المعاصرة، وإن كانت قد أدت إلى ظهور الفساد في البر والبحر بطريقة لا يمكن تصحيحها في كثير من الأحيان.</p>
+<p>ونحن هنا سنتحدث عن الضوابط التي يمكن أن تصحح المسار، لعل الله يقبل التوبة من عباده الذين أسرفوا على أنفسهم وعلى بيئتهم.</p>
+
+<h3>الضابط الأول: بلوغ الأشُدّ العلمي والتقني قبل استخراج الكنوز المخفية</h3>
+<p>أودع الله في جوف الأرض كنوزاً هائلة من المعادن والطاقة، وللأسف وقعت هذه الكنوز في أيدينا قبل أن نبلغ أشدَّنا علماً وقيماً وحضارة في استخراجها والتعامل معها، فأسرفنا وبذّرنا وأفسدنا هواءنا وأرضنا بطريقة لا يمكن الخروج منها. أو بتعبير هندسي: زدنا دالة الاضمحلال الحراري (Entropy) زيادة هائلة، كما كتب الأستاذ جيريمي ريفكن في كتابه الذي أشرنا إليه آنفاً.</p>
+<p>ويحكي لنا القرآن الكريم قصة موسى عليه السلام مع العبد الصالح في رحلتهما الحضارية التعليمية التي رافق فيها نبيُّ الله موسى هذا العبدَ الصالح ليعلّمه مما عُلِّم رشداً. نعم، ثمرة هذه الرحلة هي تعليم «الرشد» في التعامل مع كل شيء: <span class="ayah">﴿فَانطَلَقَا حَتَّىٰ إِذَا أَتَيَا أَهْلَ قَرْيَةٍ اسْتَطْعَمَا أَهْلَهَا فَأَبَوْا أَن يُضَيِّفُوهُمَا فَوَجَدَا فِيهَا جِدَارًا يُرِيدُ أَن يَنقَضَّ فَأَقَامَهُ قَالَ لَوْ شِئْتَ لَاتَّخَذْتَ عَلَيْهِ أَجْرًا﴾</span> [الكهف: &#x0667;&#x0667;].</p>
+<p>فموسى لم يفهم لماذا يقيم العبد الصالح هذا الجدار الذي يكاد أن ينقض خدمةً لقوم بخلاء أبوا أن يضيفوهما، فقال له العبد الصالح: <span class="ayah">﴿وَأَمَّا الْجِدَارُ فَكَانَ لِغُلَامَيْنِ يَتِيمَيْنِ فِي الْمَدِينَةِ وَكَانَ تَحْتَهُ كَنزٌ لَّهُمَا وَكَانَ أَبُوهُمَا صَالِحًا فَأَرَادَ رَبُّكَ أَن يَبْلُغَا أَشُدَّهُمَا وَيَسْتَخْرِجَا كَنزَهُمَا رَحْمَةً مِّن رَّبِّكَ وَمَا فَعَلْتُهُ عَنْ أَمْرِي ذَٰلِكَ تَأْوِيلُ مَا لَمْ تَسْطِع عَّلَيْهِ صَبْرًا﴾</span> [الكهف: &#x0668;&#x0662;].</p>
+<p>فكأن شرط استخراج الكنوز المخفية هو بلوغ الأشُدّ في كل شيء، سواء أكان أشُدّاً علمياً وكونياً، أم أشُدّاً في الوعي بما نفعله بأنفسنا وبالكون من حولنا.</p>
+<p>لا أدري إن كانت هناك فسحة من توبة لهذه الإنسانية تضبط بها إيقاعها مع الكنوز المخفية أم لا، وأحياناً أدعو الله ألا نعثر على كنوز جديدة قبل أن نبلغ أشدنا، فنستخرجها بخُلُق وعلم بدلاً من أن نبددها في الفضاء، فنفسد الفضاء ونفسد أنفسنا، ولا حول ولا قوة إلا بالله.</p>
+
+<h3>الضابط الثاني: التناغم مع الكون المحيط من خلال ثلاثية الفهم والحب والتسخير</h3>
+<p>اقرأ معي هذه الآيات من سورة النمل:</p>
+<p class="ayah-block"><span class="ayah">﴿وَلَقَدْ آتَيْنَا دَاوُودَ وَسُلَيْمَانَ عِلْمًا وَقَالَا الْحَمْدُ لِلَّهِ الَّذِي فَضَّلَنَا عَلَىٰ كَثِيرٍ مِّنْ عِبَادِهِ الْمُؤْمِنِينَ * وَوَرِثَ سُلَيْمَانُ دَاوُودَ وَقَالَ يَا أَيُّهَا النَّاسُ عُلِّمْنَا مَنطِقَ الطَّيْرِ وَأُوتِينَا مِن كُلِّ شَيْءٍ إِنَّ هَٰذَا لَهُوَ الْفَضْلُ الْمُبِينُ * وَحُشِرَ لِسُلَيْمَانَ جُنُودُهُ مِنَ الْجِنِّ وَالْإِنسِ وَالطَّيْرِ فَهُمْ يُوزَعُونَ * حَتَّىٰ إِذَا أَتَوْا عَلَىٰ وَادِ النَّمْلِ قَالَتْ نَمْلَةٌ يَا أَيُّهَا النَّمْلُ ادْخُلُوا مَسَاكِنَكُمْ لَا يَحْطِمَنَّكُمْ سُلَيْمَانُ وَجُنُودُهُ وَهُمْ لَا يَشْعُرُونَ * فَتَبَسَّمَ ضَاحِكًا مِّن قَوْلِهَا وَقَالَ رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَىٰ وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ وَأَدْخِلْنِي بِرَحْمَتِكَ فِي عِبَادِكَ الصَّالِحِينَ﴾</span> [النمل: &#x0661;&#x0665;-&#x0661;&#x0669;]</p>
+<p>ومنطق الطير هو طريقة عيشه في الحياة وما يفعله فيها. والنمل في قصة سليمان لم يأتِ إلى وادي الناس، وإنما ذهب الناس إلى واديه، أي إلى بيئته التي يسكن فيها. وسليمان عَلِم منطق هذه المخلوقات، وكان يتعامل معها بحرص شديد؛ فهو أولاً فهم منطقها، ثم تفاعل معه بحب <span class="ayah">﴿فَتَبَسَّمَ ضَاحِكًا مِّن قَوْلِهَا﴾</span>، ثم تركها لما سخّرها الله له من عمل في حياتها.</p>
+<p>ولا أنسى مقالاً قرأته في إحدى المجلات الأمريكية لعالم أمريكي يقول فيه: إنه لولا النمل لما كانت على ظهر الأرض حياة؛ ذلك أنه لولاه لتعطّن سطح الأرض ولما صلح للزراعة والحياة فوقه. فانظر - رحمك الله - إلى هذا الاختراع المجرم الذي اسمه «المبيدات الحشرية»، وانظر كيف نستخدمها بسفه وجهل فنهلك كل هذه الحشرات التي نجهل نفعها لنا، وهي جزء من حياتنا، إن هلكت فإنا هالكون.</p>
+<p>وفي سورة النمل أيضاً قصة سليمان مع الهدهد، ذلك الطائر الجميل الذكي الذي أرسله في مهمة استخباراتية إلى مملكة سبأ. وانظر - رحمك الله - إلى التقرير الرائع الذي وصف فيه أحوال هذه المملكة الاقتصادية والسياسية والعقدية والسلوكية في بضعة أسطر، وأنا أتحدى أن يضاهيه أعظم ضباط المخابرات في العالم.</p>
+
+<h3>الضابط الثالث: القصد والاقتصاد</h3>
+<p>والقصد هو أن نجعل لمشينا في الحياة قصداً، فلا يكون مشينا فيها عبثياً.</p>
+<p>فمن الذي يحدد «القصد» من مشينا في الأرض؟ لقد أمرنا ربنا في القرآن فقال: <span class="ayah">﴿وَاقْصِدْ فِي مَشْيِكَ﴾</span> [لقمان: &#x0661;&#x0669;]، أي اجعل لمشيك قصداً، ثم قال في آية أخرى: <span class="ayah">﴿وَعَلَى اللَّهِ قَصْدُ السَّبِيلِ﴾</span> [النحل: &#x0669;]، أي أن الله وحده هو الذي يحدد لنا القصد في الحياة.</p>
+<p>ولذلك أدعو علماء الأمة إلى أن يبحثوا في القرآن عن علم المقاصد التنموية، التي ينبغي أن تكون لنا هادياً في سيرنا التنموي.</p>
+<p>فمثلاً يقول القرآن: <span class="ayah">﴿أَتَبْنُونَ بِكُلِّ رِيعٍ آيَةً تَعْبَثُونَ * وَتَتَّخِذُونَ مَصَانِعَ لَعَلَّكُمْ تَخْلُدُونَ * وَإِذَا بَطَشْتُم بَطَشْتُمْ جَبَّارِينَ﴾</span> [الشعراء: &#x0661;&#x0662;&#x0668;-&#x0661;&#x0663;&#x0660;].</p>
+<p>فهذه الآيات تحدد ثلاثة مقاصد جاهلية ينبغي ألا يقع فيها المخطط التنموي المؤمن: الأبنية الضخمة التي لا طائل من ورائها ولا فائدة منها، والأبنية التي يظن أصحابها أنها ستخلدهم في الكون دون عائد على الناس بالخيرات، والأبنية التنموية التي تؤدي إلى البطش الجبار بالناس والبيئة.</p>
+<p>إنك تنظر أحياناً إلى حركة المدينة العربية المعاصرة فتجد ضجيجاً، ومسافات هائلة تُقطع في اليوم الواحد لم يقطعها أجدادنا في عمرهم كله، ووقوداً يُستنفد، وجهداً يُبذل، وبيئة تَفسد، ثم لا تجد في نهاية الأمر عائداً كريماً يعود على الناس من هذه الحركة العبثية آناء الليل وأطراف النهار؛ لا شيء يعود على الجسد، ولا شيء يعود على الروح. والمنظر في جملته تعبّر عنه آيات رائعة من القرآن:</p>
+<p class="ayah-block"><span class="ayah">﴿وَالْعَادِيَاتِ ضَبْحًا * فَالْمُورِيَاتِ قَدْحًا * فَالْمُغِيرَاتِ صُبْحًا * فَأَثَرْنَ بِهِ نَقْعًا * فَوَسَطْنَ بِهِ جَمْعًا﴾</span> [العاديات: &#x0661;-&#x0665;]</p>
+<p>النفوس اللاهثة في عدوها، غير القاصدة لربها، سوف تقدح ناراً تظنها نور الصباح الواعد، فتندفع إلى هذا الصباح في غارة هوجاء، فتثير من حولها سحابة من الرمال لا تكاد ترى منها الطريق، ثم تجد نفسها في النهاية عند نقطة الصفر حيث بدأت، ولا حول ولا قوة إلا بالله.</p>
+<p>إن كثيراً من عقلاء الغرب بدؤوا يتنبهون إلى هذه العبثية التنموية وبدؤوا يكتبون عنها، ولكن من الذي يسمع، ومن الذي يفيق؟ (انظر كتاب «الصغير جميل» (Small Is Beautiful) لمؤلفه شوماخر، وغيره من الكتب في هذا الباب).</p>
+<p>هذا عن القصد، فماذا عن الاقتصاد؟ كيف نقتصد في الطاقة ونحن نخطط أماكن العمل بعيداً عن أماكن السكن؟ وكيف نحافظ على الطاقة ونحن نشجع الناس على اقتناء السيارات ونهمل النقل العام؟ وكيف نقتصد في الطاقة ونحن نخترع كل يوم أجهزة ترفيه لا تسمن ولا تغني من جوع؟! هل نحن في حاجة إلى هرّاشة كهربائية؟! هل نحن في حاجة إلى سواك كهربائي؟! لماذا لا نتحمل تقلبات الجو المعقولة بدلاً من الإسراف في المكيفات الهوائية؟! وماذا عن تسخير ثورة الاتصالات لخدمة «الرغي» الشخصي والجماعي، وتزيين سلع الأغنياء لمص دماء الفقراء؟!</p>
+<p>والحقيقة أن التخطيط التنموي، ومنه التخطيط التكنولوجي، لا بد أن يلتزم بالاقتصاد في منتجاته التي ينبغي أن تحافظ على الطاقة فلا تبدَّد، وعلى الجهد الإنساني فلا يضيع، متأسّين بقول الله تعالى: <span class="ayah">﴿وَلَا تَجْعَلْ يَدَكَ مَغْلُولَةً إِلَىٰ عُنُقِكَ وَلَا تَبْسُطْهَا كُلَّ الْبَسْطِ فَتَقْعُدَ مَلُومًا مَّحْسُورًا﴾</span> [الإسراء: &#x0662;&#x0669;].</p>
+
+<h3>الضابط الرابع: الوظيفية والجمال في كل تصميم نصممه وكل منتج ننتجه</h3>
+<p>يجب أن نحرص على الوظيفية والجمال معاً، وهذا ما تعلّمناه من القرآن:</p>
+<p class="ayah-block"><span class="ayah">﴿وَالْأَنْعَامَ خَلَقَهَا لَكُمْ فِيهَا دِفْءٌ وَمَنَافِعُ وَمِنْهَا تَأْكُلُونَ * وَلَكُمْ فِيهَا جَمَالٌ حِينَ تُرِيحُونَ وَحِينَ تَسْرَحُونَ * وَتَحْمِلُ أَثْقَالَكُمْ إِلَىٰ بَلَدٍ لَّمْ تَكُونُوا بَالِغِيهِ إِلَّا بِشِقِّ الْأَنفُسِ إِنَّ رَبَّكُمْ لَرَءُوفٌ رَّحِيمٌ * وَالْخَيْلَ وَالْبِغَالَ وَالْحَمِيرَ لِتَرْكَبُوهَا وَزِينَةً وَيَخْلُقُ مَا لَا تَعْلَمُونَ﴾</span> [النحل: &#x0665;-&#x0668;]</p>
+<p>وللقبح والجمال ساحات واسعة، ولكن معظم البشر يتفقون على أجزاء كبيرة من هذه الساحة، ويتبقى بعد ذلك جزء شخصي. وقد يكون المجتمع قد أفسد الذوق العام عند الأفراد نتيجة التنافس على بيع السلع، وحينئذ ينبغي على المصلحين في الأمة أن يعملوا على استعادة الذوق العام وتبنّي قيم الأمة الجمالية.</p>
+
+<h3>الضابط الخامس: تعظيم قيمة العمل الجماعي في تصميم أي عمل تقني</h3>
+<p>ينبغي أن نبتعد عن الميكنة إن استطعنا الاستغناء عنها بتقسيم العمل على أكبر عدد من الناس يتشاركون فيه. إننا لا نريد تكنولوجيا يشترك في إبداعها نفر قليلون، وتقوم فيها الآلة بكل شيء عوضاً عن الإنسان؛ فذلك إهدار للطاقة وإهمال للإنسان.</p>
+<p>إن الإنسان في حاجة إلى العمل حتى لو كان هذا العمل يدوياً بسيطاً، وإحلال الآلة بديلاً عن الإنسان لا بد أن يكون بقدر، وإلا فإننا لا ندري العواقب النفسية والاجتماعية التي قد تحيط بالمجتمع.</p>
+
+<h3>الضابط السادس: الضابط البيئي</h3>
+<p>للأسف لم تضع الحضارة الغربية هذا الضابط في حساباتها وهي تتمدد تكنولوجياً، وإنهم ليكادون يفسدون الأرض وما عليها وما تحتها. ونحن، معشرَ الشعوب الإسلامية التي لم تسهم كثيراً في إفساد البيئة، علينا أن نأخذ حذرنا؛ فإفساد البيئة ليس جريمة دنيوية فحسب، ولكنه أيضاً جريمة أخلاقية سيحاسبنا الله عليها حساباً عسيراً.</p>
+<p>انظر إلى مخلفاتنا الصناعية ومخلفاتنا الذرية، وانظر إلى طرائقنا في البناء والكساء، وإلى نوعية الطعام الذي نأكله: حياة صناعية مفسدة للبيئة من حولنا.</p>
+<p>كنا ونحن صغار ننفر كل فترة لننزع الحشائش من جانبي الترع التي تمر بحقولنا، وكنا نفعل ذلك بأيدينا، حتى جاء اليوم الذي صرنا نرش فيه المبيدات على جانبي النهر لنقتل هذه الحشائش. ولن أنسى يوماً رأيت فيه الأسماك نافقة في النهر بسبب هذه المبيدات، وفقدت في تلك الأيام كلبين للحراسة ظنّا أن هذا السمك صالح للأكل، فسبحا في النهر وأكلا منه فماتا.</p>
+<p>وما فعله الكلبان جهلاً نفعله نحن بأنفسنا كل يوم، حتى أصبحنا لا ندري ماذا نأكل وماذا نشرب وبماذا نتداوى.</p>
+<p>المهم أن ضابط البيئة ينبغي أن يكون حاضراً دائماً في عملنا الهندسي، فلا نغفله أبداً.</p>
+
+<h3>الضابط السابع: ملاءمة التكنولوجيا لإمكانيات المجتمع</h3>
+<p>كل تكنولوجيا تحتاج إلى مناخ معين من التعليم والتدريب والخامات والبنية الأساسية والأسواق.</p>
+<p>والأمن القومي يستدعي أن نملك هذه الإمكانيات، أو أن نتأكد من القدرة على الحصول عليها من السوق العالمية.</p>
+<p>إن هناك تكنولوجيات محظورة عالمياً على العالم الثالث، وهناك قوائم معروفة لهذه العناصر التقنية؛ ولذلك ينبغي للمخطط التكنولوجي أن يختار تكنولوجيا يملك عناصرها، وأن يعمل في الوقت نفسه على الامتلاك المستقبلي للتكنولوجيا التي لا يملك عناصرها، عن طريق عمليات البحث والتطوير.</p>
+</article>
+<footer>والله الموفق</footer>
+</main>
+</body>
 </html>
