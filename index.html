@@ -282,14 +282,13 @@ nav a:hover, nav a.active {
 .ltitle { flex: 1; min-width: 0; }
 .ltitle strong { display: block; font-weight: 600; color: var(--fg); line-height: 1.5; }
 .ltitle em { font-style: normal; color: var(--muted); font-size: 0.875rem; }
-.list-pdf {
-  display: inline-flex; align-items: center; gap: 0.25rem;
-  font-size: 0.75rem; color: var(--accent); font-weight: 600;
-  padding: 0.15rem 0.4rem; border: 1px solid var(--accent);
-  border-radius: 4px; text-decoration: none; flex-shrink: 0;
-  transition: background 0.15s, color 0.15s; white-space: nowrap;
+.list-link {
+  flex: 1; min-width: 0; text-decoration: none; color: inherit;
+  display: block; transition: color 0.15s;
 }
-.list-pdf:hover { background: var(--accent); color: white; }
+.list-link:hover, .list-link:hover strong { color: var(--accent); }
+.list-link strong { display: block; font-weight: 600; color: var(--fg); line-height: 1.5; }
+.list-link em { font-style: normal; color: var(--muted); font-size: 0.875rem; }
 
 /* ─── BIO ─── */
 .bio-block {
@@ -546,43 +545,28 @@ footer .fhosting {
     <ul class="content-list">
       <li>
         <span class="lnum">١</span>
-        <span class="ltitle">
-          <strong>الترجمة: قضايا ومشكلات وحلول — الجزء الأول</strong>
-          <em>قضايا أساسية في الترجمة</em>
-        </span>
-        <a class="list-pdf" href="docs/tarjama%201.pdf" target="_blank" rel="noopener">⬇ PDF</a>
+        <a class="list-link" href="docs/tarjama%201.pdf" target="_blank" rel="noopener"><strong>الترجمة: قضايا ومشكلات وحلول — الجزء الأول</strong>
+          <em>قضايا أساسية في الترجمة</em></a>
       </li>
       <li>
         <span class="lnum">٢</span>
-        <span class="ltitle">
-          <strong>الترجمة: قضايا ومشكلات وحلول — الجزء الثاني</strong>
-          <em>تطور الترجمة</em>
-        </span>
-        <a class="list-pdf" href="docs/tarjama%202.pdf" target="_blank" rel="noopener">⬇ PDF</a>
+        <a class="list-link" href="docs/tarjama%202.pdf" target="_blank" rel="noopener"><strong>الترجمة: قضايا ومشكلات وحلول — الجزء الثاني</strong>
+          <em>تطور الترجمة</em></a>
       </li>
       <li>
         <span class="lnum">٣</span>
-        <span class="ltitle">
-          <strong>الترجمة: قضايا ومشكلات وحلول — الجزء الثالث</strong>
-          <em>التخطيط الاجتماعي والتعليمي للترجمة</em>
-        </span>
-        <a class="list-pdf" href="docs/tarjama%203.pdf" target="_blank" rel="noopener">⬇ PDF</a>
+        <a class="list-link" href="docs/tarjama%203.pdf" target="_blank" rel="noopener"><strong>الترجمة: قضايا ومشكلات وحلول — الجزء الثالث</strong>
+          <em>التخطيط الاجتماعي والتعليمي للترجمة</em></a>
       </li>
       <li>
         <span class="lnum">٤</span>
-        <span class="ltitle">
-          <strong>الترجمة: قضايا ومشكلات وحلول — الجزء الرابع</strong>
-          <em>الترجمة للتنمية البشرية</em>
-        </span>
-        <a class="list-pdf" href="docs/tarjama%204.pdf" target="_blank" rel="noopener">⬇ PDF</a>
+        <a class="list-link" href="docs/tarjama%204.pdf" target="_blank" rel="noopener"><strong>الترجمة: قضايا ومشكلات وحلول — الجزء الرابع</strong>
+          <em>الترجمة للتنمية البشرية</em></a>
       </li>
       <li>
         <span class="lnum">٥</span>
-        <span class="ltitle">
-          <strong>الترجمة: قضايا ومشكلات وحلول — الجزء الخامس</strong>
-          <em>الترجمة بين الإنسان والحاسب الآلي</em>
-        </span>
-        <a class="list-pdf" href="docs/tarjama%205.pdf" target="_blank" rel="noopener">⬇ PDF</a>
+        <a class="list-link" href="docs/tarjama%205.pdf" target="_blank" rel="noopener"><strong>الترجمة: قضايا ومشكلات وحلول — الجزء الخامس</strong>
+          <em>الترجمة بين الإنسان والحاسب الآلي</em></a>
       </li>
     </ul>
   </section>
@@ -595,54 +579,54 @@ footer .fhosting {
       <span class="sec-count">٤٨ مقالة</span>
     </div>
     <ul class="content-list">
-      <li><span class="lnum">١</span><span class="ltitle"><strong>ملاحظات حول علوم المقاصد</strong></span><a class="list-pdf" href="#">⬇ PDF</a></li>
-      <li><span class="lnum">٢</span><span class="ltitle"><strong>التفاعل بين عالم القيم وبين العمل الهندسي</strong></span><a class="list-pdf" href="html/altafa3ol%20bayn%203alam%20alkiyam%20wa%20al3amal%20elhandasy.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٣</span><span class="ltitle"><strong>أفكار في التنمية</strong></span><a class="list-pdf" href="html/afkar%20fee%20altanmeya.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٤</span><span class="ltitle"><strong>اللغة والحضارة</strong></span><a class="list-pdf" href="html/al-logha%20wa%20alhadara.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٥</span><span class="ltitle"><strong>المصطلح العلمي: ذوق وترجمة وظيفية</strong></span><a class="list-pdf" href="html/almostalah%20al3lmey.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٦</span><span class="ltitle"><strong>التعليم والتنمية.. الهَمُ الجوهري</strong></span><a class="list-pdf" href="html/alta3leem%20wa%20altanmeya%20alham%20algawhary.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٧</span><span class="ltitle"><strong>أمثلة من التربية الحضارية عند الإمام البنا</strong></span><a class="list-pdf" href="html/ElBanna.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٨</span><span class="ltitle"><strong>في المسألة الصهيونية والهيمنة الغربية</strong></span><a class="list-pdf" href="html/fee%20almasala%20alsahyouneya.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٩</span><span class="ltitle"><strong>قاموسي السياسي الحضاري</strong></span><a class="list-pdf" href="html/kamosee%20alseyasee%20alhadary.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">١٠</span><span class="ltitle"><strong>خواطر في فهم السنة</strong></span><a class="list-pdf" href="html/khawater%20fee%20fahm%20alsonna.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">١١</span><span class="ltitle"><strong>خواطر حول الفكر الحضاري لمالك بن نبي</strong></span><a class="list-pdf" href="html/khwater%20hawl%20alfikr%20alhadary%20le%20malik%20ibn%20naby.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">١٢</span><span class="ltitle"><strong>ملاحظات حول الحركة الإسلامية وعلاقتها بالدولة</strong></span><a class="list-pdf" href="html/molahazat%20hawl%20alharaka%20alislameya%20wa%203ilakatha%20bedawla.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">١٣</span><span class="ltitle"><strong>Outline Of An Islamic Theory Of Development</strong></span><a class="list-pdf" href="html/Outline%20Of%20An%20Islamic%20Theory%20Of%20Development.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">١٤</span><span class="ltitle"><strong>ربي إني مغلوب فانتصر</strong></span><a class="list-pdf" href="html/rabee%20inny%20maghloob%20fa%20intaser.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">١٥</span><span class="ltitle"><strong>رسالة إلى الملأ الأمريكي</strong></span><a class="list-pdf" href="html/resala%20ela%20almalaa%20al%20amreeky.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">١٦</span><span class="ltitle"><strong>رسالة إلى ملأ التحالف المستكبر وإلى شعوبه المستضعفة</strong></span><a class="list-pdf" href="html/resla%20ela%20malaa%20altahlof%20almostakbir%20wa%20ela%20sho3oboh%20almostad3afa.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">١٧</span><span class="ltitle"><strong>تأملات في "هوجة إصلاح الخطاب الإسلامي"</strong></span><a class="list-pdf" href="html/taamolat%20fee%20hoget%20islah%20alkhitab%20alislamy.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">١٨</span><span class="ltitle"><strong>تصور لهيئة للوقف التنموي على العلوم والتكنولوجيا</strong></span><a class="list-pdf" href="html/waqf2.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">١٩</span><span class="ltitle"><strong>أيام الله في أمريكا</strong></span><a class="list-pdf" href="html/ayam%20Allah%20fee%20america.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٢٠</span><span class="ltitle"><strong>رؤى في إصلاح العملية التعليمية</strong></span><a class="list-pdf" href="html/roaa%20fee%20islah%20al3amalya%20elta3leemya.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٢١</span><span class="ltitle"><strong>العلم والتكنولوجيا وطبيعة العمران الإسلامي عبر التاريخ</strong></span><a class="list-pdf" href="html/al3lm%20wa%20altaknologia%20wa%20tabe3at%20al3omran%20alislamy%203abr%20altareekh.doc.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٢٢</span><span class="ltitle"><strong>الفوضى الخلاقة وانتحار الدول</strong></span><a class="list-pdf" href="html/fawda.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٢٣</span><span class="ltitle"><strong>التجدد الحضاري</strong></span><a class="list-pdf" href="html/altjadod%20alhadary.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٢٤</span><span class="ltitle"><strong>الشعارات ومضامينها</strong></span><a class="list-pdf" href="docs/alshe3arat%20wa%20madaminaha.pdf" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٢٥</span><span class="ltitle"><strong>لغتنا القومية والنص القرآني</strong></span><a class="list-pdf" href="docs/lo3hatna%20alkawmia%20wa%20alnass%20alqurany.pdf" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٢٦</span><span class="ltitle"><strong>دعاة المجررة والحاج كامل النجار</strong></span><a class="list-pdf" href="html/do3at%20almagrara%20wa%20alhajj%20kamel%20elnaggar.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٢٧</span><span class="ltitle"><strong>ورقة أولية في التنمية الصناعية</strong></span><a class="list-pdf" href="html/warka%20awalya%20fee%20altanmeya%20alsena3ya.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٢٨</span><span class="ltitle"><strong>المواطنة</strong></span><a class="list-pdf" href="html/almowatanah.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٢٩</span><span class="ltitle"><strong>أفكار حول العلاقة بين الثقافة والعلم والتكنولوجيا</strong></span><a class="list-pdf" href="html/afkar%20hawl%20al3laka%20bayn%20althakafa%20al3lm%20wa%20altokomlogya.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٣٠</span><span class="ltitle"><strong>في تأويل سورة الكافرون</strong></span><a class="list-pdf" href="html/kafiroon.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٣١</span><span class="ltitle"><strong>تحديث وهيكلة الصناعة في دول جنوب المتوسط</strong></span><a class="list-pdf" href="html/tahdeeth%20wa%20haykalet%20elsena3a.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٣٢</span><span class="ltitle"><strong>ملاحظات حول واجب الوقت للحركة الوطنية</strong></span><a class="list-pdf" href="html/molhazat%20hawl%20wagib%20alwaqt%20lil%20haraka%20alwataneya.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٣٣</span><span class="ltitle"><strong>ملاحظات حول حركة الحضارات من الميلاد إلى الهرم</strong></span><a class="list-pdf" href="html/molahazat%20hawl%20harket%20elhadarat%20men%20almilad%20ela%20alhiram.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٣٤</span><span class="ltitle"><strong>تصميم عمليات الانهيار الكارثي للمجتمعات والدول</strong></span><a class="list-pdf" href="html/inhiyar%20karthy.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٣٥</span><span class="ltitle"><strong>رسالة إلى عقلاء</strong></span><a class="list-pdf" href="html/resala%20le3oklaa%20alomma.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٣٦</span><span class="ltitle"><strong>إشراقات من سورة البلد</strong></span><a class="list-pdf" href="html/albalad.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٣٧</span><span class="ltitle"><strong>محاضرة في تأبين العلامة الدكتور توفيق الشاوي</strong></span><a class="list-pdf" href="html/shawy.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٣٨</span><span class="ltitle"><strong>تأملات حول المحكم والمتشابه في القرآن</strong></span><a class="list-pdf" href="html/taamolat%20hawl%20almohkam%20wal%20motshabih.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٣٩</span><span class="ltitle"><strong>التمني المصفى</strong></span><a class="list-pdf" href="html/Tamani%20Mosafa.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٤٠</span><span class="ltitle"><strong>ثلاث قضايا نجوم في حياتي وفي حياة مصر</strong></span><a class="list-pdf" href="docs/qodat%20thalatha.pdf" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٤١</span><span class="ltitle"><strong>ملاحظات حول واجب الوقت للحركة الوطنية صاحبة الثورة المصرية</strong></span><a class="list-pdf" href="html/molahazat%20hawl%20wagib%20Thawra.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٤٢</span><span class="ltitle"><strong>مشروع الفضاء المصري… نظرات استغفارية</strong></span><a class="list-pdf" href="docs/mashro3%20alfadaa%20almasry.pdf" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٤٣</span><span class="ltitle"><strong>الدعوة لعمل جهاز شعبي لحماية منتجاتنا وتسويقها</strong></span><a class="list-pdf" href="html/da3wa%20le3amal%20gihaz%20sha3by.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٤٤</span><span class="ltitle"><strong>الفتاوى الباغية في مسألة الطعام</strong></span><a class="list-pdf" href="html/alfatawa%20al%20bageya%20fee%20alta3am.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٤٥</span><span class="ltitle"><strong>المضاجع</strong></span><a class="list-pdf" href="html/madaje3.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٤٦</span><span class="ltitle"><strong>لمحات حول فكر الإمام مالك بن نبي</strong></span><a class="list-pdf" href="html/malek%20bin%20Naby.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٤٧</span><span class="ltitle"><strong>تعطيل قيم النهضة</strong></span><a class="list-pdf" href="html/ta3teel%20quyam%20elnahda.html" target="_blank" rel="noopener">⬇ PDF</a></li>
-      <li><span class="lnum">٤٨</span><span class="ltitle"><strong>تأملات في سورة الضحى والمزمل</strong></span><a class="list-pdf" href="html/Taamolat%20fee%20surat%20aldoha%20wa%20almozmil.html" target="_blank" rel="noopener">⬇ PDF</a></li>
+      <li><span class="lnum">١</span><span class="ltitle"><strong>ملاحظات حول علوم المقاصد</strong></span></li>
+      <li><span class="lnum">٢</span><a class="list-link" href="html/altafa3ol%20bayn%203alam%20alkiyam%20wa%20al3amal%20elhandasy.html" target="_blank" rel="noopener"><strong>التفاعل بين عالم القيم وبين العمل الهندسي</strong></a></li>
+      <li><span class="lnum">٣</span><a class="list-link" href="html/afkar%20fee%20altanmeya.html" target="_blank" rel="noopener"><strong>أفكار في التنمية</strong></a></li>
+      <li><span class="lnum">٤</span><a class="list-link" href="html/al-logha%20wa%20alhadara.html" target="_blank" rel="noopener"><strong>اللغة والحضارة</strong></a></li>
+      <li><span class="lnum">٥</span><a class="list-link" href="html/almostalah%20al3lmey.html" target="_blank" rel="noopener"><strong>المصطلح العلمي: ذوق وترجمة وظيفية</strong></a></li>
+      <li><span class="lnum">٦</span><a class="list-link" href="html/alta3leem%20wa%20altanmeya%20alham%20algawhary.html" target="_blank" rel="noopener"><strong>التعليم والتنمية.. الهَمُ الجوهري</strong></a></li>
+      <li><span class="lnum">٧</span><a class="list-link" href="html/ElBanna.html" target="_blank" rel="noopener"><strong>أمثلة من التربية الحضارية عند الإمام البنا</strong></a></li>
+      <li><span class="lnum">٨</span><a class="list-link" href="html/fee%20almasala%20alsahyouneya.html" target="_blank" rel="noopener"><strong>في المسألة الصهيونية والهيمنة الغربية</strong></a></li>
+      <li><span class="lnum">٩</span><a class="list-link" href="html/kamosee%20alseyasee%20alhadary.html" target="_blank" rel="noopener"><strong>قاموسي السياسي الحضاري</strong></a></li>
+      <li><span class="lnum">١٠</span><a class="list-link" href="html/khawater%20fee%20fahm%20alsonna.html" target="_blank" rel="noopener"><strong>خواطر في فهم السنة</strong></a></li>
+      <li><span class="lnum">١١</span><a class="list-link" href="html/khwater%20hawl%20alfikr%20alhadary%20le%20malik%20ibn%20naby.html" target="_blank" rel="noopener"><strong>خواطر حول الفكر الحضاري لمالك بن نبي</strong></a></li>
+      <li><span class="lnum">١٢</span><a class="list-link" href="html/molahazat%20hawl%20alharaka%20alislameya%20wa%203ilakatha%20bedawla.html" target="_blank" rel="noopener"><strong>ملاحظات حول الحركة الإسلامية وعلاقتها بالدولة</strong></a></li>
+      <li><span class="lnum">١٣</span><a class="list-link" href="html/Outline%20Of%20An%20Islamic%20Theory%20Of%20Development.html" target="_blank" rel="noopener"><strong>Outline Of An Islamic Theory Of Development</strong></a></li>
+      <li><span class="lnum">١٤</span><a class="list-link" href="html/rabee%20inny%20maghloob%20fa%20intaser.html" target="_blank" rel="noopener"><strong>ربي إني مغلوب فانتصر</strong></a></li>
+      <li><span class="lnum">١٥</span><a class="list-link" href="html/resala%20ela%20almalaa%20al%20amreeky.html" target="_blank" rel="noopener"><strong>رسالة إلى الملأ الأمريكي</strong></a></li>
+      <li><span class="lnum">١٦</span><a class="list-link" href="html/resla%20ela%20malaa%20altahlof%20almostakbir%20wa%20ela%20sho3oboh%20almostad3afa.html" target="_blank" rel="noopener"><strong>رسالة إلى ملأ التحالف المستكبر وإلى شعوبه المستضعفة</strong></a></li>
+      <li><span class="lnum">١٧</span><a class="list-link" href="html/taamolat%20fee%20hoget%20islah%20alkhitab%20alislamy.html" target="_blank" rel="noopener"><strong>تأملات في "هوجة إصلاح الخطاب الإسلامي"</strong></a></li>
+      <li><span class="lnum">١٨</span><a class="list-link" href="html/waqf2.html" target="_blank" rel="noopener"><strong>تصور لهيئة للوقف التنموي على العلوم والتكنولوجيا</strong></a></li>
+      <li><span class="lnum">١٩</span><a class="list-link" href="html/ayam%20Allah%20fee%20america.html" target="_blank" rel="noopener"><strong>أيام الله في أمريكا</strong></a></li>
+      <li><span class="lnum">٢٠</span><a class="list-link" href="html/roaa%20fee%20islah%20al3amalya%20elta3leemya.html" target="_blank" rel="noopener"><strong>رؤى في إصلاح العملية التعليمية</strong></a></li>
+      <li><span class="lnum">٢١</span><a class="list-link" href="html/al3lm%20wa%20altaknologia%20wa%20tabe3at%20al3omran%20alislamy%203abr%20altareekh.doc.html" target="_blank" rel="noopener"><strong>العلم والتكنولوجيا وطبيعة العمران الإسلامي عبر التاريخ</strong></a></li>
+      <li><span class="lnum">٢٢</span><a class="list-link" href="html/fawda.html" target="_blank" rel="noopener"><strong>الفوضى الخلاقة وانتحار الدول</strong></a></li>
+      <li><span class="lnum">٢٣</span><a class="list-link" href="html/altjadod%20alhadary.html" target="_blank" rel="noopener"><strong>التجدد الحضاري</strong></a></li>
+      <li><span class="lnum">٢٤</span><a class="list-link" href="docs/alshe3arat%20wa%20madaminaha.pdf" target="_blank" rel="noopener"><strong>الشعارات ومضامينها</strong></a></li>
+      <li><span class="lnum">٢٥</span><a class="list-link" href="docs/lo3hatna%20alkawmia%20wa%20alnass%20alqurany.pdf" target="_blank" rel="noopener"><strong>لغتنا القومية والنص القرآني</strong></a></li>
+      <li><span class="lnum">٢٦</span><a class="list-link" href="html/do3at%20almagrara%20wa%20alhajj%20kamel%20elnaggar.html" target="_blank" rel="noopener"><strong>دعاة المجررة والحاج كامل النجار</strong></a></li>
+      <li><span class="lnum">٢٧</span><a class="list-link" href="html/warka%20awalya%20fee%20altanmeya%20alsena3ya.html" target="_blank" rel="noopener"><strong>ورقة أولية في التنمية الصناعية</strong></a></li>
+      <li><span class="lnum">٢٨</span><a class="list-link" href="html/almowatanah.html" target="_blank" rel="noopener"><strong>المواطنة</strong></a></li>
+      <li><span class="lnum">٢٩</span><a class="list-link" href="html/afkar%20hawl%20al3laka%20bayn%20althakafa%20al3lm%20wa%20altokomlogya.html" target="_blank" rel="noopener"><strong>أفكار حول العلاقة بين الثقافة والعلم والتكنولوجيا</strong></a></li>
+      <li><span class="lnum">٣٠</span><a class="list-link" href="html/kafiroon.html" target="_blank" rel="noopener"><strong>في تأويل سورة الكافرون</strong></a></li>
+      <li><span class="lnum">٣١</span><a class="list-link" href="html/tahdeeth%20wa%20haykalet%20elsena3a.html" target="_blank" rel="noopener"><strong>تحديث وهيكلة الصناعة في دول جنوب المتوسط</strong></a></li>
+      <li><span class="lnum">٣٢</span><a class="list-link" href="html/molhazat%20hawl%20wagib%20alwaqt%20lil%20haraka%20alwataneya.html" target="_blank" rel="noopener"><strong>ملاحظات حول واجب الوقت للحركة الوطنية</strong></a></li>
+      <li><span class="lnum">٣٣</span><a class="list-link" href="html/molahazat%20hawl%20harket%20elhadarat%20men%20almilad%20ela%20alhiram.html" target="_blank" rel="noopener"><strong>ملاحظات حول حركة الحضارات من الميلاد إلى الهرم</strong></a></li>
+      <li><span class="lnum">٣٤</span><a class="list-link" href="html/inhiyar%20karthy.html" target="_blank" rel="noopener"><strong>تصميم عمليات الانهيار الكارثي للمجتمعات والدول</strong></a></li>
+      <li><span class="lnum">٣٥</span><a class="list-link" href="html/resala%20le3oklaa%20alomma.html" target="_blank" rel="noopener"><strong>رسالة إلى عقلاء</strong></a></li>
+      <li><span class="lnum">٣٦</span><a class="list-link" href="html/albalad.html" target="_blank" rel="noopener"><strong>إشراقات من سورة البلد</strong></a></li>
+      <li><span class="lnum">٣٧</span><a class="list-link" href="html/shawy.html" target="_blank" rel="noopener"><strong>محاضرة في تأبين العلامة الدكتور توفيق الشاوي</strong></a></li>
+      <li><span class="lnum">٣٨</span><a class="list-link" href="html/taamolat%20hawl%20almohkam%20wal%20motshabih.html" target="_blank" rel="noopener"><strong>تأملات حول المحكم والمتشابه في القرآن</strong></a></li>
+      <li><span class="lnum">٣٩</span><a class="list-link" href="html/Tamani%20Mosafa.html" target="_blank" rel="noopener"><strong>التمني المصفى</strong></a></li>
+      <li><span class="lnum">٤٠</span><a class="list-link" href="docs/qodat%20thalatha.pdf" target="_blank" rel="noopener"><strong>ثلاث قضايا نجوم في حياتي وفي حياة مصر</strong></a></li>
+      <li><span class="lnum">٤١</span><a class="list-link" href="html/molahazat%20hawl%20wagib%20Thawra.html" target="_blank" rel="noopener"><strong>ملاحظات حول واجب الوقت للحركة الوطنية صاحبة الثورة المصرية</strong></a></li>
+      <li><span class="lnum">٤٢</span><a class="list-link" href="docs/mashro3%20alfadaa%20almasry.pdf" target="_blank" rel="noopener"><strong>مشروع الفضاء المصري… نظرات استغفارية</strong></a></li>
+      <li><span class="lnum">٤٣</span><a class="list-link" href="html/da3wa%20le3amal%20gihaz%20sha3by.html" target="_blank" rel="noopener"><strong>الدعوة لعمل جهاز شعبي لحماية منتجاتنا وتسويقها</strong></a></li>
+      <li><span class="lnum">٤٤</span><a class="list-link" href="html/alfatawa%20al%20bageya%20fee%20alta3am.html" target="_blank" rel="noopener"><strong>الفتاوى الباغية في مسألة الطعام</strong></a></li>
+      <li><span class="lnum">٤٥</span><a class="list-link" href="html/madaje3.html" target="_blank" rel="noopener"><strong>المضاجع</strong></a></li>
+      <li><span class="lnum">٤٦</span><a class="list-link" href="html/malek%20bin%20Naby.html" target="_blank" rel="noopener"><strong>لمحات حول فكر الإمام مالك بن نبي</strong></a></li>
+      <li><span class="lnum">٤٧</span><a class="list-link" href="html/ta3teel%20quyam%20elnahda.html" target="_blank" rel="noopener"><strong>تعطيل قيم النهضة</strong></a></li>
+      <li><span class="lnum">٤٨</span><a class="list-link" href="html/Taamolat%20fee%20surat%20aldoha%20wa%20almozmil.html" target="_blank" rel="noopener"><strong>تأملات في سورة الضحى والمزمل</strong></a></li>
     </ul>
   </section>
 
@@ -682,33 +666,27 @@ footer .fhosting {
     <ul class="content-list">
       <li>
         <span class="lnum">١</span>
-        <span class="ltitle"><strong>التخلف الحضاري للمسلمين وإمكانيات النهوض</strong></span>
-        <a class="list-pdf" href="docs/tanmeya-west-retardation.pdf" target="_blank" rel="noopener">⬇ PDF</a>
+        <a class="list-link" href="docs/tanmeya-west-retardation.pdf" target="_blank" rel="noopener"><strong>التخلف الحضاري للمسلمين وإمكانيات النهوض</strong></a>
       </li>
       <li>
         <span class="lnum">٢</span>
         <span class="ltitle"><strong>القمر الإسلامي.. فكرة تحتاج لإعادة نظر</strong></span>
-        <a class="list-pdf" href="#">⬇ PDF</a>
       </li>
       <li>
         <span class="lnum">٣</span>
-        <span class="ltitle"><strong>التقتير على العلماء وسياسة فضهم عن تنمية أوطانهم جريمة لا تغتفر</strong></span>
-        <a class="list-pdf" href="docs/hiwar%20resala%20magazine.pdf" target="_blank" rel="noopener">⬇ PDF</a>
+        <a class="list-link" href="docs/hiwar%20resala%20magazine.pdf" target="_blank" rel="noopener"><strong>التقتير على العلماء وسياسة فضهم عن تنمية أوطانهم جريمة لا تغتفر</strong></a>
       </li>
       <li>
         <span class="lnum">٤</span>
-        <span class="ltitle"><strong>التنمية التي يفرضها الغرب علينا تزيدنا تخلفاً</strong></span>
-        <a class="list-pdf" href="docs/islah-tanmeya-egyptian-gov.pdf" target="_blank" rel="noopener">⬇ PDF</a>
+        <a class="list-link" href="docs/islah-tanmeya-egyptian-gov.pdf" target="_blank" rel="noopener"><strong>التنمية التي يفرضها الغرب علينا تزيدنا تخلفاً</strong></a>
       </li>
       <li>
         <span class="lnum">٥</span>
-        <span class="ltitle"><strong>على الدولة المصرية اليوم وهي تتوجه للإصلاح أن تبدأ بمنظومة «التنمية»</strong></span>
-        <a class="list-pdf" href="docs/west-america-army-pressure.pdf" target="_blank" rel="noopener">⬇ PDF</a>
+        <a class="list-link" href="docs/west-america-army-pressure.pdf" target="_blank" rel="noopener"><strong>على الدولة المصرية اليوم وهي تتوجه للإصلاح أن تبدأ بمنظومة «التنمية»</strong></a>
       </li>
       <li>
         <span class="lnum">٦</span>
-        <span class="ltitle"><strong>الجيش المصري يواجه ضغوطاً دولية ونفسية للاستمرار في السلطة</strong></span>
-        <a class="list-pdf" href="html/Nabtha.html" target="_blank" rel="noopener">⬇ PDF</a>
+        <a class="list-link" href="html/Nabtha.html" target="_blank" rel="noopener"><strong>الجيش المصري يواجه ضغوطاً دولية ونفسية للاستمرار في السلطة</strong></a>
       </li>
     </ul>
   </section>
