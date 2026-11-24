@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مقدمة الموقع — بقلم: أ.د. إبراهيم البيومي غانم</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Noto+Naskh+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --ink:#2b2722; --muted:#6f665b; --paper:#fbf8f2; --accent:#7a4b1f; --rule:#e4dccd; }
+  * { box-sizing: border-box; }
+  html { background: var(--paper); }
+  body { margin:0; color:var(--ink); font-family: "Noto Naskh Arabic","Amiri","Traditional Arabic","Arial",serif; font-size:1.18rem; line-height:2.05; }
+  main { max-width:46rem; margin:0 auto; padding:3.5rem 1.5rem 5rem; }
+  header { text-align:center; margin-bottom:3rem; padding-bottom:2rem; border-bottom:1px solid var(--rule); }
+  h1 { font-family: "Amiri",serif; font-size:2.5rem; line-height:1.45; margin:0 0 .5rem; color:var(--accent); }
+  h1 .sub { display:block; font-size:.7em; }
+  .author { font-size:1.2rem; color:var(--muted); margin:0; line-height:1.7; }
+  h2 { font-family: "Amiri",serif; font-size:1.7rem; color:var(--accent); margin:3rem 0 1rem; padding-bottom:.3rem; border-bottom:1px solid var(--rule); }
+  h3 { font-family: "Amiri",serif; font-size:1.35rem; margin:2.2rem 0 .6rem; color:var(--ink); }
+  a { color:var(--accent); }
+  p { margin:0 0 1.1rem; text-align:justify; text-justify:inter-word; }
+  .ayah { font-family:"Amiri", serif; color:#2f5d3a; font-size:1.08em; }
+  p.ayah-block { text-align:center; margin:1.3rem 0; }
+  p.verse { text-align:center; font-family:"Amiri", serif; font-size:1.15em; color:var(--accent); margin:1.2rem 0; }
+  p.definition { background:#f3eee4; border-right:4px solid var(--accent); padding:.9rem 1.2rem; border-radius:4px; }
+  p.formula { text-align:center; font-family:"Amiri", serif; font-size:1.25em; color:var(--accent); background:#f3eee4; padding:.8rem; border-radius:6px; }
+  .saw { font-family:"Amiri","Noto Naskh Arabic",serif; }
+  bdi.en { font-family: Georgia,"Times New Roman",serif; font-size:.95em; }
+  bdi.ar, span.ar { font-family:"Noto Naskh Arabic","Amiri",serif; }
+  nav.toc { background:#f3eee4; border-radius:6px; padding:1rem 1.4rem; margin-bottom:2.5rem; font-size:1.05rem; }
+  nav.toc strong { display:block; margin-bottom:.3rem; color:var(--accent); }
+  nav.toc ol { margin:0; padding:0; list-style:none; }
+  nav.toc a { color:var(--ink); text-decoration:none; }
+  nav.toc a:hover { color:var(--accent); text-decoration:underline; }
+  ol.num { list-style:none; padding:0; margin:0 0 1.4rem; }
+  ol.num li { margin-bottom:.55rem; text-align:justify; }
+  ol.num li p { margin-top:.6rem; }
+  ol.num .n { display:inline-block; min-width:2rem; color:var(--accent); font-weight:600; }
+  ul.names { margin:0 0 1.2rem; padding-right:1.4rem; }
+  ul.names li { margin-bottom:.3rem; }
+  table.terms { border-collapse:collapse; margin:0 auto 1.4rem; min-width:60%; }
+  table.terms td { padding:.35rem 1rem; border-bottom:1px solid var(--rule); }
+  table.terms td:last-child { font-family:"Noto Naskh Arabic","Amiri",serif; color:var(--accent); }
+  table.data { border-collapse:collapse; width:100%; margin:.4rem 0 1.4rem; font-size:.95em; }
+  table.data th { background:#efe6d6; color:var(--accent); font-weight:700; padding:.45rem .7rem; border:1px solid #d8cbb3; }
+  table.data td { padding:.4rem .7rem; border:1px solid var(--rule); vertical-align:top; text-align:right; }
+  table.data td.c { text-align:center; white-space:nowrap; }
+  table.data tbody tr:nth-child(even) td { background:#f8f4ec; }
+  table.data td ol { margin:0; padding-right:1.2rem; list-style-type:arabic-indic; }
+  .note { font-size:.92em; color:var(--muted); }
+  blockquote { margin:1.2rem 0; padding:.8rem 1.3rem; background:#f3eee4; border-right:4px solid var(--accent); border-radius:4px; }
+  blockquote p:last-child { margin-bottom:0; }
+  figure.diagram { margin:1.4rem 0 1.8rem; text-align:center; }
+  figure.diagram figcaption { margin-top:.4rem; color:var(--accent); font-family:"Amiri",serif; font-weight:700; font-size:1.1em; }
+  .figure-missing { border:2px dashed var(--rule); border-radius:6px; padding:1.4rem; margin:1rem 0 1.4rem; text-align:center; color:var(--muted); font-size:.95em; background:#fffdf8; }
+  .flow { display:flex; flex-direction:column; align-items:center; gap:.3rem; margin:1.2rem 0 1.6rem; }
+  .flow .box { background:#f3eee4; border:1px solid var(--rule); border-radius:6px; padding:.45rem 1.6rem; min-width:12rem; text-align:center; font-weight:600; color:var(--accent); }
+  .flow .arrow { color:var(--muted); line-height:1; }
+  .flow-row { display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:.5rem; margin:1rem 0 1.8rem; }
+  .flow-row .box { background:#f3eee4; border:1px solid #c9b99d; border-radius:6px; padding:.45rem 1rem; font-weight:600; color:var(--accent); }
+  .flow-row .arrow { color:var(--muted); font-size:1.3em; }
+  blockquote.sahifa { font-family:"Amiri",serif; font-size:1.05em; max-height:none; }
+  .cite-note { font-size:.9em; color:var(--muted); border-top:1px solid var(--rule); padding-top:.6rem; }
+  .closing { text-align:center; font-family:"Amiri",serif; font-size:1.2em; color:var(--accent); margin-top:2rem; }
+  .sig { text-align:left; margin-top:2.5rem; color:var(--muted); line-height:1.7; }
+  .sig strong { color:var(--ink); font-weight:600; }
+  @media (max-width:600px) { body { font-size:1.06rem; } h1 { font-size:1.9rem; } main { padding-top:2rem; } }
+  @media print { html { background:#fff; } nav.toc { display:none; } main { padding:0; } }
+</style>
+</head>
+<body>
+<div style="background:#1a6e3c;color:#fff;padding:0.5rem 1rem;font-family:Cairo,sans-serif;font-size:0.95rem;text-align:right"><a href="https://fiqh-hadary.com" style="color:#fff;text-decoration:none">&#8594; العودة إلى الموقع</a></div>
+<main>
+<header>
+  <h1>مقدمة الموقع</h1>
+  <p class="author">بقلم: أ.د. إبراهيم البيومي غانم</p>
+</header>
+<article>
+<p>يحتوي هذا الموقع على مجموعة المؤلفات من البحوث والدراسات التي كتبها الأستاذ الدكتور سيد دسوقي حسن في ثلاثة مجالات أساسية هي: التفسير الحضاري للقرآن الكريم، والتنمية، والفكر السياسي.</p>
+<p>وأستاذنا الدكتور سيد دسوقي هو واحد من رواد التجديد الفكري في تلك المجالات الثلاثة، وله في كل منها نظرية خاصة، تتميز بالعمق والوضوح في آن واحد، وتجمع بين التأصيل المعرفي المستند إلى المرجعية الإسلامية من جهة، والتوجيه العملي الذي يخاطب الواقع المعاصر من جهة ثانية، ولا تغيب الرؤية المستقبلية عن أي من نظرياته من جهة ثالثة. ونادراً ما تجتمع هذه الأبعاد في عمل فكري واحد.</p>
+<h2>التفسير الحضاري للقرآن الكريم</h2>
+<p>في مجال التفسير الحضاري للقرآن الكريم، يقدم أستاذنا الدكتور سيد دسوقي رؤيته واجتهاده انطلاقاً من التمييز بين ما يرويه القرآن من الأمثلة والقصص، وهو يرى أن الأمثال الواردة في آيات الكتاب العزيز تهدف إلى التوضيح وتقريب المعاني، أما القصص فيهدف إلى دلالات وعبر، دون أن تكون هناك حاجة إلى التوقف كثيراً عند تحقيق وقائع القصص من حيث زمن وقوعها أو مكانه الجغرافي. وعلى هذا المنهج سار الدكتور سيد أشواطاً مع بعض آيات الكتاب العزيز، وقرأها قراءة جديدة، وكشف عن دروس وعبر تخاطب فطرة الإنسان ووجدانه وعقله وقلبه في وقت واحد؛ حتى إن القارئ يشعر وكأنه يقرأ ما في نفسه هو بكلمات الدكتور سيد دسوقي.</p>
+<p>لم يتوقف الدكتور سيد كثيراً عند ملابسات الأحداث والقصص القرآني من المنظور التاريخي، وفضل أن يرسل نظره إلى آفاق المعاني والدلالات التي تتضمنها تلك الأحداث والقصص، وبدلاً من أن ينهج نهج التفسير البياني، أو التفسير الوعظي، أو التفسير الصوفي، آثر أن ينهج نهجاً جديداً أسماه «التفسير الحضاري»، فاتحاً بذلك باباً جديداً ومبتكراً في تاريخ تفسير القرآن الكريم. وقد تعلمنا منه، وما زلنا ننهل مما أفاء الله به عليه، أنا وكثيرون من أبناء جيلي ممن كان لهم حظ التعرف على الأستاذ الدكتور سيد منذ سنوات طويلة.</p>
+<h2>التنمية</h2>
+<p>في مجال التنمية، كان الشغل الشاغل للدكتور سيد، ولا يزال، هو البحث عن المعنى العملي لمفهوم التنمية، لا المعنى المجرد الذي لا حظ له من التطبيق في الواقع الاجتماعي الذي تحياه شعوب الأمة الإسلامية. وقد هداه منهجه الحضاري في النظر في آيات القرآن الكريم إلى تعريف مبتكر للتنمية من الناحيتين النظرية والتطبيقية. يقول إن «التنمية هي التخلية بين الإنسان وترابه الوطني ليتفاعل معه في ظل عقيدة وشريعة ونظام»، وذلك ليأكل مما يزرع، ويلبس مما يصنع، ويسد حاجاته المختلفة بجهده وبثمرات عمله. وهذا التعريف غير مسبوق في كتابات التنمية بمختلف توجهاتها التي أخذت في الظهور منذ نهايات الحرب العالمية الثانية. فبعضها كان يركز على الزيادة الكمية في معدلات الدخل القومي وفي متوسط نصيب الفرد من ذلك الدخل، وبعضها الآخر كان يركز على الجوانب الاجتماعية والسياسية إضافة إلى الجانب الاقتصادي، وأخيرا بدأ الحديث عن التنمية بمعنى توسيع فرص الاختيار أمام الإنسان كي يحسن من نوعية حياته ويرفع مستوى معيشته معنوياً ومادياً. وهذا المفهوم الأخير سبق إليه الأستاذ الدكتور سيد دسوقي قبل نحو ربع قرن من الزمان؛ فمنذ نهاية الثمانينيات من القرن الماضي وهو يحاضر ويكتب مؤكداً على أن جوهر التنمية هو «الحرية»، ولم يكن هذا المعنى بعيداً عنه، ولا عصياً على إدراكه؛ وذلك بفضل قربه من القرآن الكريم، وحبه له، وسياحته في آفاقه الرحبة. وقد هداه تأمله الحضاري إلى أن الحرية هي جوهر من الجواهر القرآنية النفيسة التي يتعين علينا الوصول إليها، وإفادة العالمين بها، وليس فقط أمة المسلمين.</p>
+<p>في نظريته التنموية أيضاً، يقدم الدكتور سيد دسوقي تعريفاً إجرائياً ـ عملياً يقسم فيه التنمية إلى أنواع ثلاثة: تنمية البقاء، وتنمية النماء، وتنمية السبق. ويشرح مقصوده بكل نوع منها بطريقة مبسطة وقابلة للتطبيق، وفي متناول صناع القرار على كافة مستويات المسئولية. وما قدمه في هذا المجال مبتكر من ألفه إلى يائه، وجدير بأن يكون موضعاً لمزيد من البحث والدراسة، وسيجد القارئ الكريم متعة عقلية، ورياضة ذهنية، واجتهادات بالغة الثراء في هذا المجال.</p>
+<h2>الفكر السياسي</h2>
+<p>في مجال الفكر السياسي، شارك الأستاذ الدكتور سيد دسوقي منذ صباه الباكر في حمل مسئولية رد الشبهات التي ما برح أعداء الإسلام يثيرونها بقصد تشويه مبادئه السامية، وطمس معالمه الواضحة، وحصره في زاوية ضيقة بين العبد وربه بحجة أن ذلك شرط ضروري للنهضة والتقدم مثلما فعل آخرون. وكان من حظه أنه نشأ وتربى في مدرسة الإخوان المسلمين، فأتيحت له فرصة فهم الإسلام باعتباره نظاماً شاملاً للحياة، ومنهجاً قويماً يحقق مصلحة الإنسان في دنياه وآخرته بتوازن دقيق يجمع بين الروح والمادة دون إفراط هنا أو تفريط هناك.</p>
+<p>سيجد القارئ الكريم لكتابات الأستاذ الدكتور سيد أن اهتمامه في مجال الفكر السياسي قد تركز على عدد من القضايا تمثل مفاصل أساسية في بنية الاجتهادات المعاصرة في هذا المجال ومن أهمها:</p>
+<ul class="names">
+<li>قضية الدولة وعلاقتها بالمجتمع في ظل الظروف المعاصرة وفي ضوء التحديات التي تواجهها. وفي هذه القضية نجده يؤكد مراراً وتكراراً على فكرة يراها جوهرية وهي أن المحافظة على كيان الدولة كرابطة سياسية جامعة يجب أن ينظر إليه على أنه «مقصد» لا يقل أهمية عن مقاصد الشريعة الأخرى التي اجتهد علماؤنا في استنباطها قبل عدة قرون. وهذه فكرة جديدة وجديرة بمزيد من التأصيل والنظر.</li>
+<li>قضية آليات عمل النظام السياسي المعاصر من منظور إسلامي، وفي هذا الصدد يطرح رؤية جديدة أيضاً في كيفية تفعيل دور الشورى في مختلف هياكل الدولة، وفي جميع مؤسسات المجتمع. مؤكداً على أن الشورى الإسلامية ليست فقط قيمة سياسية وإنما هي أيضاً قيمة أخلاقية.</li>
+<li>قضية الحركات الإسلامية ودورها في جهود الإحياء والتجدد الحضاري. وحديثه في هذه القضية حديث الخبير بما يقول، فقد عرك العمل وعركه العمل في فترة سابقة من حياته مع الإخوان المسلمين، وهي أكبر حركة وأوسعها انتشاراً وتأثيراً ليس في مصر وحدها وإنما في العالمين العربي والإسلامي. ويقدم آراء بالغة الأهمية في تقييم ونقد وتطوير هذه الحركة وغيرها من الحركات الإصلاحية المعاصرة من موقع الناصح الأمين، والغيور الحريص على ما ينفع المجتمع والدولة معاً.</li>
+</ul>
+<h2>خاتمة</h2>
+<p>في هذا الموقع، سيجد القارئ نفسه أمام أفكار جديدة، واجتهادات عميقة، ونظرات ثاقبة، وفي الوقت نفسه سيجد أنها تستثير الفكر، وتشحذ همته للنقد، وتدفعه لإعادة النظر في كثير من الآراء والتصورات التي قد يظن أنها غير قابلة للمناقشة. وسيجد أيضاً أن للأستاذ الدكتور سيد لغة خاصة، لا هي تقليدية بعيدة عن إدراك الإنسان المعاصر في المجتمعات الإسلامية، ولا هي حداثية منبتة الجذور عن وعيه الذي تشكل في إطار المرجعية الإسلامية العليا لهذه المجتمعات، وإنما هي لغة متجددة، ذات مصطلحات وتعبيرات نابضة بالأصالة والمعاصرة، عامرة بالعمق والسهولة في آن معاً.</p>
+<p>وأخيراً، وقبل أن نترك المجال للقارئ الكريم للسياحة في أفكار واجتهادات أستاذنا الدكتور سيد دسوقي، أجد أن من حقه علي، ومن واجبي تجاهه أن أعترف بأنني غامرت بكتابة هذه الكلمات رغم معرفتي بقصوري عن الإلمام بأطراف عطائه الفكري، وتقصيري في التعريف بهذا العطاء. ولكن أغراني بالإقدام على كتابة ما كتبت حبه لتلامذته وحسن ظنه بهم، وفرط تواضعه معهم. فاللهم اجزه عما قدم، وعنا وعن المسلمين، وبني آدم أجمعين خير الجزاء وأحسنه.</p>
+</article>
+</main>
+</body>
+</html>
