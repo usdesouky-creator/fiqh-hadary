@@ -316,14 +316,6 @@ nav a:hover, nav a.active {
 .bio-field-label { color: var(--muted); font-size: 0.85rem; font-weight: 600; min-width: 80px; }
 .bio-field-val { color: var(--fg); font-size: 0.9rem; }
 
-/* ─── VIDEO PLACEHOLDER ─── */
-.video-ph {
-  background: var(--surface); border: 2px dashed var(--border);
-  border-radius: 10px; padding: 3.5rem 2rem; text-align: center;
-  color: var(--muted);
-}
-.video-ph .vicon { font-size: 3.5rem; display: block; margin-bottom: 1rem; }
-.video-ph p { font-size: 0.95rem; }
 
 /* ─── INTRO PAGE ─── */
 .intro-text {
@@ -403,10 +395,9 @@ footer .fhosting {
     <a href="#books">المؤلفات</a>
     <a href="#studies">دراسات</a>
     <a href="#articles">المقالات</a>
-    <a href="#bio">سيرة ذاتية</a>
     <a href="#dialogues">الحوارات</a>
-    <a href="#video">فيديو</a>
     <a href="#intro">مقدمة الموقع</a>
+    <a href="#bio">سيرة ذاتية</a>
   </div>
 </nav>
 
@@ -613,32 +604,6 @@ footer .fhosting {
     </ul>
   </section>
 
-  <!-- BIOGRAPHY -->
-  <section id="bio" class="section">
-    <div class="sec-head">
-      <div class="sec-icon">👤</div>
-      <h2>سيرة ذاتية</h2>
-    </div>
-    <div class="bio-block">
-      <div class="bio-photo"></div>
-      <div class="bio-text">
-        <h3>الدكتور سيد دسوقي حسن</h3>
-        <p><a href="html/nubdha-taarifiya.html" target="_blank" rel="noopener">نبذة تعريفية… د. سيد دسوقي في سطور</a></p>
-        <p>عالم إسلامي ومهندس متخصص في الفقه الحضاري والتجديد الإسلامي، كرّس حياته لتطوير رؤية إسلامية متكاملة في مجالي التنمية والفكر الحضاري.</p>
-        <div class="bio-fields">
-          <div class="bio-field">
-            <span class="bio-field-label">التخصص</span>
-            <span class="bio-field-val">الفقه الحضاري والتجديد الإسلامي</span>
-          </div>
-          <div class="bio-field">
-            <span class="bio-field-label">المجالات</span>
-            <span class="bio-field-val">الهندسة · التفسير القرآني · التنمية الإسلامية</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- DIALOGUES -->
   <section id="dialogues" class="section">
     <div class="sec-head">
@@ -670,18 +635,6 @@ footer .fhosting {
     </ul>
   </section>
 
-  <!-- VIDEO -->
-  <section id="video" class="section">
-    <div class="sec-head">
-      <div class="sec-icon">🎥</div>
-      <h2>فيديو</h2>
-    </div>
-    <div class="video-ph">
-      <span class="vicon">🎬</span>
-      <p>سيتم إضافة المحتوى المرئي قريباً</p>
-      <p style="margin-top:0.5rem;font-size:0.82rem;">يمكن تضمين روابط يوتيوب أو تحميل ملفات الفيديو مباشرة</p>
-    </div>
-  </section>
 
   <!-- INTRO -->
   <section id="intro" class="section">
@@ -693,6 +646,32 @@ footer .fhosting {
       <a href="html/muqaddimat-al-mawqi.html" target="_blank" rel="noopener">مقدمة عن الموقع… بقلم أ.د. إبراهيم البيومي غانم</a>
     </p>
     <p class="intro-attr">— أ.د. إبراهيم البيومي غانم</p>
+  </section>
+
+  <!-- BIOGRAPHY -->
+  <section id="bio" class="section">
+    <div class="sec-head">
+      <div class="sec-icon">👤</div>
+      <h2>سيرة ذاتية</h2>
+    </div>
+    <div class="bio-block">
+      <div class="bio-photo"></div>
+      <div class="bio-text">
+        <h3>الدكتور سيد دسوقي حسن</h3>
+        <p><a href="html/nubdha-taarifiya.html" target="_blank" rel="noopener">نبذة تعريفية… د. سيد دسوقي في سطور</a></p>
+        <p>عالم إسلامي ومهندس متخصص في الفقه الحضاري والتجديد الإسلامي، كرّس حياته لتطوير رؤية إسلامية متكاملة في مجالي التنمية والفكر الحضاري.</p>
+        <div class="bio-fields">
+          <div class="bio-field">
+            <span class="bio-field-label">التخصص</span>
+            <span class="bio-field-val">الفقه الحضاري والتجديد الإسلامي</span>
+          </div>
+          <div class="bio-field">
+            <span class="bio-field-label">المجالات</span>
+            <span class="bio-field-val">الهندسة · التفسير القرآني · التنمية الإسلامية</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
 
@@ -707,10 +686,9 @@ footer .fhosting {
     <a href="#books">المؤلفات</a>
     <a href="#studies">دراسات</a>
     <a href="#articles">المقالات</a>
-    <a href="#bio">سيرة ذاتية</a>
     <a href="#dialogues">الحوارات</a>
-    <a href="#video">فيديو</a>
     <a href="#intro">مقدمة الموقع</a>
+    <a href="#bio">سيرة ذاتية</a>
   </nav>
   <div class="fhosting">موقع ثابت — يمكن استضافته مجاناً على GitHub Pages أو Netlify أو Cloudflare Pages</div>
 </footer>
