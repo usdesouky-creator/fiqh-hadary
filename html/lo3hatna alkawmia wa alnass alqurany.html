@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>لغتنا القومية: والنص القرآني — د. سيد دسوقي حسن</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Noto+Naskh+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --ink:#2b2722; --muted:#6f665b; --paper:#fbf8f2; --accent:#7a4b1f; --rule:#e4dccd; }
+  * { box-sizing: border-box; }
+  html { background: var(--paper); }
+  body { margin:0; color:var(--ink); font-family: "Noto Naskh Arabic","Amiri","Traditional Arabic","Arial",serif; font-size:1.18rem; line-height:2.05; }
+  main { max-width:46rem; margin:0 auto; padding:3.5rem 1.5rem 5rem; }
+  header { text-align:center; margin-bottom:3rem; padding-bottom:2rem; border-bottom:1px solid var(--rule); }
+  h1 { font-family: "Amiri",serif; font-size:2.5rem; line-height:1.45; margin:0 0 .5rem; color:var(--accent); }
+  h1 .sub { display:block; font-size:.7em; }
+  .author { font-size:1.2rem; color:var(--muted); margin:0; line-height:1.7; }
+  h2 { font-family: "Amiri",serif; font-size:1.7rem; color:var(--accent); margin:3rem 0 1rem; padding-bottom:.3rem; border-bottom:1px solid var(--rule); }
+  h3 { font-family: "Amiri",serif; font-size:1.35rem; margin:2.2rem 0 .6rem; color:var(--ink); }
+  p { margin:0 0 1.1rem; text-align:justify; text-justify:inter-word; }
+  .ayah { font-family:"Amiri", serif; color:#2f5d3a; font-size:1.08em; }
+  p.ayah-block { text-align:center; margin:1.3rem 0; }
+  p.verse { text-align:center; font-family:"Amiri", serif; font-size:1.15em; color:var(--accent); margin:1.2rem 0; }
+  p.definition { background:#f3eee4; border-right:4px solid var(--accent); padding:.9rem 1.2rem; border-radius:4px; }
+  p.formula { text-align:center; font-family:"Amiri", serif; font-size:1.25em; color:var(--accent); background:#f3eee4; padding:.8rem; border-radius:6px; }
+  .saw { font-family:"Amiri","Noto Naskh Arabic",serif; }
+  bdi.en { font-family: Georgia,"Times New Roman",serif; font-size:.95em; }
+  bdi.ar, span.ar { font-family:"Noto Naskh Arabic","Amiri",serif; }
+  nav.toc { background:#f3eee4; border-radius:6px; padding:1rem 1.4rem; margin-bottom:2.5rem; font-size:1.05rem; }
+  nav.toc strong { display:block; margin-bottom:.3rem; color:var(--accent); }
+  nav.toc ol { margin:0; padding:0; list-style:none; }
+  nav.toc a { color:var(--ink); text-decoration:none; }
+  nav.toc a:hover { color:var(--accent); text-decoration:underline; }
+  ol.num { list-style:none; padding:0; margin:0 0 1.4rem; }
+  ol.num li { margin-bottom:.55rem; text-align:justify; }
+  ol.num li p { margin-top:.6rem; }
+  ol.num .n { display:inline-block; min-width:2rem; color:var(--accent); font-weight:600; }
+  ul.names { margin:0 0 1.2rem; padding-right:1.4rem; }
+  ul.names li { margin-bottom:.3rem; }
+  table.terms { border-collapse:collapse; margin:0 auto 1.4rem; min-width:60%; }
+  table.terms td { padding:.35rem 1rem; border-bottom:1px solid var(--rule); }
+  table.terms td:last-child { font-family:"Noto Naskh Arabic","Amiri",serif; color:var(--accent); }
+  blockquote { margin:1.2rem 0; padding:.8rem 1.3rem; background:#f3eee4; border-right:4px solid var(--accent); border-radius:4px; }
+  blockquote p:last-child { margin-bottom:0; }
+  figure.diagram { margin:1.4rem 0 1.8rem; text-align:center; }
+  figure.diagram figcaption { margin-top:.4rem; color:var(--accent); font-family:"Amiri",serif; font-weight:700; font-size:1.1em; }
+  .figure-missing { border:2px dashed var(--rule); border-radius:6px; padding:1.4rem; margin:1rem 0 1.4rem; text-align:center; color:var(--muted); font-size:.95em; background:#fffdf8; }
+  .flow { display:flex; flex-direction:column; align-items:center; gap:.3rem; margin:1.2rem 0 1.6rem; }
+  .flow .box { background:#f3eee4; border:1px solid var(--rule); border-radius:6px; padding:.45rem 1.6rem; min-width:12rem; text-align:center; font-weight:600; color:var(--accent); }
+  .flow .arrow { color:var(--muted); line-height:1; }
+  .flow-row { display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:.5rem; margin:1rem 0 1.8rem; }
+  .flow-row .box { background:#f3eee4; border:1px solid #c9b99d; border-radius:6px; padding:.45rem 1rem; font-weight:600; color:var(--accent); }
+  .flow-row .arrow { color:var(--muted); font-size:1.3em; }
+  .closing { text-align:center; font-family:"Amiri",serif; font-size:1.2em; color:var(--accent); margin-top:2rem; }
+  .sig { text-align:left; margin-top:2.5rem; color:var(--muted); line-height:1.7; }
+  .sig strong { color:var(--ink); font-weight:600; }
+  @media (max-width:600px) { body { font-size:1.06rem; } h1 { font-size:1.9rem; } main { padding-top:2rem; } }
+  @media print { html { background:#fff; } nav.toc { display:none; } main { padding:0; } }
+</style>
+</head>
+<body>
+<div style="background:#1a6e3c;color:#fff;padding:0.5rem 1rem;font-family:Cairo,sans-serif;font-size:0.95rem;text-align:right"><a href="https://fiqh-hadary.com" style="color:#fff;text-decoration:none">&#8594; العودة إلى الموقع</a></div>
+<main>
+<header>
+  <h1>لغتنا القومية<br><span class="sub">والنص القرآني</span></h1>
+  <p class="author">د. سيد دسوقي حسن</p>
+</header>
+<article>
+<p>في الأشهر الأخيرة ارتفعت أصوات تنادي بنقل النصوص القرآنية والأحاديث النبوية من مواد المطالعة إلى مواد الدين، وترددت أصوات أخرى مستنكرة هذا النداء، وشاعت بين الناس أقوال بأن وزارة التعليم استجابت للأمر، ثم كذّبت الوزارة على لسان وزيرها ما أُشيع.</p>
+<p>وفي هذه الكلمة القصيرة نقدم اقتراحاً يتفق بإذن الله مع روح حضارتنا. وقبل أن نقدم اقتراحنا لا بد أن نشير إلى قضية تعلّم اللغة؛ فاللغة ملكة وليست صنعة، ويعلّمنا صاحب «المقدمة» العلامة ابن خلدون أن صناعة اللغة تختلف عن ملكة اللغة، فيقول في الفصل الخمسين («فصل في تعليم اللسان المضري») عن كيفية اكتساب هذه الملكة ما يلي:</p>
+<blockquote>
+<p>«اعلم أن ملكة اللسان المضري قد ذهبت وفسدت، ولغة أهل الجيل كلهم مغايرة للغة مضر التي نزل بها القرآن، وإنما هي لغة أخرى من امتزاج العجمة بها كما قدمنا. إلا أن اللغات لما كانت ملكات كما مر، كان تعلمها ممكناً شأن سائر الملكات. ووجه التعليم لمن يبتغي هذه الملكة ويروم تحصيلها أن يأخذ نفسه بحفظ كلامهم القديم الجاري على أساليبهم، من القرآن والحديث وكلام السلف، ومخاطبات فحول العرب في أسجاعهم وأشعارهم، وكلمات المولّدين أيضاً في سائر فنونهم، حتى يتنزل لكثرة حفظه لكلامهم من المنظوم والمنثور منزلة من نشأ بينهم ولُقّن العبارة عن المقاصد منهم، ثم يتصرف بعد ذلك في التعبير عما في ضميره على حسب عبارتهم وتأليف كلماتهم، وما وعاه وحفظه من أساليبهم وترتيب ألفاظهم، فتحصل له هذه الملكة بهذا الحفظ والاستعمال، ويزداد بكثرتهما رسوخاً وقوة… وعلى قدر المحفوظ وكثرة الاستعمال تكون جودة المصنوع نظماً ونثراً. ومن حصل على هذه الملكات فقد حصل على لغة مضر، وهو الناقد البصير بالبلاغة فيها، وهكذا ينبغي أن يكون تعلمها، والله يهدي من يشاء بفضله وكرمه».</p>
+</blockquote>
+<p>ومن ثم كان انتهاج المدرسة الحديثة مواد المطالعة والنصوص طريقةً وأسلوباً لتعليم اللغة مدخلاً سليماً في الشرق والغرب سواءً. ولما كان القرآن الكريم قمة البلاغة في اللغة العربية، كان لزاماً على مخطط البرامج العربي أن ينهل من هذا النبع العذب نصوصاً يشدو بها الطلاب لحناً جميلاً، لتستقيم بها ألسنتهم وترقى بها أساليبهم.</p>
+<p>ولم يكن ذلك نهج المسلمين فحسب، بل كان كثير من أهلنا النصارى يحفظون القرآن، ويرسلون أولادهم إلى كتاتيب قراهم ومدنهم لتستقيم ألسنتهم وتتحسن أساليبهم، ولم يكن هؤلاء يخشون على أولادهم أن يصيبهم مكروه عقدي أو سلوكي أو فكري؛ ذلك أن رسالة القرآن تكمل رسالة المسيحية الغراء، وكلتاهما من نبع واحد، وما يدعو إليه القرآن من مكارم الأخلاق هو هو ما تدعو إليه المسيحية السمحة. وكل أنبياء المسيحية هم أنبياء الإسلام، ثم زاد الإسلام فوق ما أتت به المسيحية شريعة غراء هي ملكنا جميعاً، نحتكم إليها في أحوالنا المدنية، ونسعى إلى أن يكتمل الاحتكام إليها في كل شؤون حياتنا.</p>
+<p>ولم يبقَ بعد ذلك إلا بضع آيات قليلة تتعلق بالعقيدة، يخالف بها الإسلام العقيدة الشائعة بين كثير من أهلنا النصارى، وهذه لا يضعها مخطط عاقل للبرامج في مواد النصوص والمطالعة إلا إذا كان مغرضاً يريد بذلك إحراج عقائد أولادنا النصارى.</p>
+<p>وبرغم كل ما تقدم… ولأن الإسلام يرفض كل أنواع القهر الاجتماعي، ومنها القهر الثقافي، حتى إنه ليسمح للمجوس أن يتزوجوا حسب شريعتهم أمهاتهم وأخواتهم، ويرفض الحسن البصري أن يستجيب لأمير المؤمنين عمر بن عبد العزيز عندما يستنكر أن يكون على وجه الأرض من يتزوج أمه أو أخته، وأن ذلك مخالف للشريعة الحاكمة، فيكتب له الحسن البصري: «هذا مما جرت به عقائدهم، وإنما أنت متّبع ولست مبتدعاً، فالزم، والسلام».</p>
+<h2>الاقتراح</h2>
+<p>أقول: رغم كل ما تقدم، إلا أنني أقترح على واضعي كتب النصوص والمطالعة أن تكون هناك نصوص اختيارية يختار منها الطالب ما يشاء، وأن تكون صيغة الامتحان بحيث تسمح بهذه التعددية. هذا هو الحل الوحيد المقبول. أما أن ننقل النصوص إلى مادة الدين، فهذا تحجيم لتعليم اللغة، يفرضه فرد أو مجموعة على الأغلبية الساحقة من مسلمين ومسيحيين يريدون أن يتعلموا لغتهم من أعظم نص في أي لغة، ألا وهو النص القرآني.</p>
+<p>ففي ظل هذا الاقتراح يستطيع أولئك المسيحيون أو المسلمون الرافضون لأن يُسمِعوا أبناءهم آيات من القرآن أن يختاروا نصوصاً أخرى ليمتحنوا فيها. أما الأغلبية الساحقة من المسلمين والمسيحيين الذين يحبون أن يتعلم أبناؤهم اللغة من أعظم نص فيها، والذين لا يرون حرجاً أن تتسرب قيم القرآن وأخلاقه وأمثاله، بما تحمل من حضارة راقية، إلى نفوس أبنائهم، مع احتفاظ كل صاحب عقيدة بعقيدته… أما هؤلاء فلهم الحق كل الحق في أن تظل آيات الكتاب الكريم نصوصاً سامقة في كتب المطالعة والنصوص، وأن ينصحوا أبناءهم باختيارها وحفظها وفهمها…</p>
+<p class="closing">ذلك أقرب للعدل، وأهدى للتي هي أقوم</p>
+</article>
+
+</main>
+</body>
+</html>
